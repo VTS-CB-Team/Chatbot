@@ -58,3 +58,23 @@ stories:
   steps:
   - intent: warning
   - action: utter_warning
+  
+- story: test_Delay
+  steps:
+  - intent: test_Delay
+  - action: utter_test_Delay
+
+- story: unsubcribe_Request
+  steps:
+  - intent: unsubcribe_Request
+  - action: utter_unsubcribe_Request
+
+- story: reserve_ScoreTable
+  steps:
+  - intent: reserve_ScoreTable
+  - action: utter_reserve_ScoreTable
+
+- story: lost_StudentCard
+  steps:
+  - intent: lost_StudentCard
+  - action: utter_lost_StudentCard
