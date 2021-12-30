@@ -15,6 +15,11 @@ intents:
   - no_ans
   - thanks
   - out_of_scope
+  - score
+  - password
+  - dl_tuition
+  - scholarship
+  - warning
 
 # entities:
 #   - name
@@ -31,7 +36,7 @@ intents:
 responses:
   utter_greet:
   - text: "Hi! Bạn có thể cho mình biết tên của bạn được không?"
-  - text: "Hi! Mình có thể giúp gì được cho bạn?"
+  - text: "Hi! Mình có thể giúp gìra được cho bạn?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -63,7 +68,7 @@ responses:
   - text: "Một số vị trí việc làm tiêu biểu khi học khoa hệ thống thông tin quản lý như: Phân tích nghiệp vụ, phân tích dữ liệu kinh doanh, quản trị dữ liệu, phân tích và phát triển hệ thống thông tin kinh tế, kiểm thử phần mềm, phát triển phần mềm..."
 
   utter_thank:
-  - text: "Cảm ơn bạn đã quan tâm khoa hệ thống thông tin. Nếu có thắc mắc bạn hãy nói cho mình biết nhé."
+  - text: "Cảm ơn bạn đã quan tâm. Nếu có thắc mắc bạn hãy nói cho mình biết nhé."
 
   utter_out_of_scope:
   - text: "Xin lỗi câu hỏi của bạn ngoài phạm vi cung cấp thông tin của chúng tôi. Chúng tôi sẽ cố cập nhật thông tin sớm nhất để phù hợp với câu hỏi của bạn. Bạn còn câu hỏi khác không ạ?"
@@ -73,6 +78,37 @@ responses:
   
   utter_default:
   - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
+
+  utter_score:
+  - text: "Trong thời gian 1 tuần kể từ khi điểm lên CTT nếu phát hiện sai sót, bạn trực tiếp liên hệ với giảng viên dạy bạn rồi lên văn phòng Khoa làm đơn để sửa điểm nhé."
+
+  utter_password:
+  - text: " Bạn lên phòng QLNH 101 xin cấp lại mật khẩu nhé. 3 ngày sau bạn đăng nhập lại với mật khẩu mặc định là 123."
+
+  utter_dl_tuition:
+  - text: "Thời gian đóng học phí là trong 3 tuần đầu của học kì chính bạn nhé."
+
+  utter_scholarship:
+  - text: "Có các loại học bổng:
+1. Học bổng khuyến khích học tập từng kì, điểm từ cao xuống thấp, mỗi khóa khoảng trên 150 sv
+2. Học phần ngân hàng tuỳ theo điều kiện từng ngân hàng như điểm rèn luyện, tích lũy, hoàn cảnh....
+3 . Học bổng ngành và thống đốc thì điểm cao nhé
+Các học bổng đều tính hệ 10. Học bổng khuyến khích học tập, học bổng ngành và học bổng thống đốc sẽ do nhà trường lựa chọn từ trên xuống. Học bổng NHTM sẽ đăng ký theo các bước sau:
+Bước 1: Sinh viên đăng ký nhận học bổng theo link:
+https://docs.google.com/forms/d/1nfgtJufc2REwPZBpjFZck4_5wgW8kB_8mECPdJEeT1M/viewform
+Bước 2: Nộp hồ sơ:
+- Hồ sơ gồm:
++ CMTND, Sổ hộ khẩu, Giấy khai sinh (Phô tô Công chứng) –
++ Thẻ sinh viên phô tô
++ Giấy chứng nhận tham gia hoạt động Phong trào (có xác nhận của các đơn vị tổ chức – bản phô tô kèm bản chính để đối chiếu) 
++ Giấy chứng nhận Hoàn cảnh khó khăn - Bản chính (đối với HB nghèo vượt khó)
+- Địa điểm nộp: Phòng 102, tòa nhà 7 tầng Học viện Ngân hàng. Liên hệ: Cô Cúc (đt: 0974 645 807; E-Mail: cucdoktqd@gmail.com)
+Danh sách sinh viên chính thức được nhận học bổng của các Ngân hàng sẽ được công bố trên website của phòng Quản lý Người học. Bạn có thể vào link sau để rõ hơn nhé.  http://qlnh.hvnh.edu.vn/hoc-bong/hoc-bong-cac-nhtm/thong-bao-quy-trinh-xet-cap-hoc-bong-cac-to-chuc.html 
+Để biết thêm thông tin và điều kiện xét bạn có thể tham khảo trên fanpage CLB ACC.
+"
+
+  utter_warning:
+  - text: "Quy định cụ thể trong Sổ tay sinh viên (Điểm trung bình chung tích lũy 1.2 đối với sv năm nhất. 1.4, 1.6, 1.8 đối với sinh viên năm 2, 3, 4). Danh sách có trên cổng thông tin. 3 lần cảnh cáo liên tiếp sinh viên sẽ bị đuổi học. Từ lần cảnh cáo thứ 2 sẽ có giấy báo về gia đình nhé."
 
 actions:
 - utter_greet
@@ -87,6 +123,11 @@ actions:
 - utter_job
 - utter_thank
 - utter_out_of_scope
+- utter_score
+- utter_password
+- utter_dl_tuition
+- utter_scholarship
+- utter_warning
 # - utter_default
 # - utter_please_rephrase
 # - action_name
