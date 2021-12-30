@@ -184,6 +184,8 @@ nlu:
     - Giấy tờ xét học bổng
     - Hạn nộp đơn xét học bổng
     - Thông tin học bổng
+    - Học bổng
+    - HỌc bổng trường mình như nào
 
 - intent: warning
   examples: |
