@@ -193,4 +193,39 @@ nlu:
     - Bị cảnh cáo lần 3
     - Khi nào bị cảnh cáo học vụ
     - Cảnh cáo
+# Education Procedure
+- intent: test_Delay
+  examples: |
+    - Chào bạn. Cho mình hỏi thủ tục hoãn thi với
+    - Thủ tục hoãn thi
+    - Hoãn thi như thế nào ?
+    - Mình muốn dừng thi kỳ này
+    - Dừng thi kỳ này
+    - Không muốn thi kỳ này
+    - Hiện tại mình có việc muốn hoãn thi
 
+- intent: unsubcribe_Request
+  examples: |
+    - Anh chị ơi, cho em hỏi khi nào được nộp đơn hủy
+    - Admin ơi, cho mình hỏi khi nào được nộp đơn hủy
+    - Bao giờ được nộp đơn hủy?
+    - Mình muốn hủy học phần
+    - Hủy học phần
+    - Không học môn này nữa
+    - Xóa môn
+
+- intent: reserve_ScoreTable
+  examples: |
+    - Anh chị ơi, cho em hỏi, bảo lưu em phải làm những gì?
+    - Em muốn bảo lưu
+    - Bảo lưu kết quả thì làm ntn?
+    - Mình muốn dừng học thì sao
+    - Mình muốn bảo lưu để năm sau quay lại học có được không
+
+- intent: lost_StudentCard
+  examples: |
+    - Mất thẻ sinh viên
+    - Mình mất thẻ sinh viên rồi thì làm sao đây
+    - Anh chị ơi, em bị mất thẻ sinh viên thì phải làm thế nào
+    - Mình muốn làm lại thẻ sinh viên
+    - Thẻ sinh viên mất rồi thì có sao không?

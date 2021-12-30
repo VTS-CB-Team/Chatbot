@@ -20,7 +20,10 @@ intents:
   - dl_tuition
   - scholarship
   - warning
-
+  - test_Delay
+  - unsubcribe_Request
+  - reserve_ScoreTable
+  - lost_StudentCard
 # entities:
 #   - name
 #   - surname
@@ -110,6 +113,21 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   utter_warning:
   - text: "Quy định cụ thể trong Sổ tay sinh viên (Điểm trung bình chung tích lũy 1.2 đối với sv năm nhất. 1.4, 1.6, 1.8 đối với sinh viên năm 2, 3, 4). Danh sách có trên cổng thông tin. 3 lần cảnh cáo liên tiếp sinh viên sẽ bị đuổi học. Từ lần cảnh cáo thứ 2 sẽ có giấy báo về gia đình nhé."
 
+  utter_test_Delay:
+  - text: Bạn xin giấy xác nhận của bệnh viện cùng với đơn hoãn thi nộp cho cô Thu phòng QLNH 102 nhé.
+  
+  utter_unsubcribe_Request:
+  - text: Chào bạn. Hai tuần đầu của kì học bạn nhé. bạn mua đơn hủy học phần ở quán photo trường mình rồi điền và nộp đơn cho phòng QLNH 101 nhé. Học phí sẽ được trừ sau khi môn được hủy trên cổng thông tin. 
+
+  utter_reserve_ScoreTable:
+  - text: Bạn nộp đơn bảo lưu tại phòng đào tạo. Khi muốn quay lại học bạn làm đơn xin qua lại học trước khi học kì mới bắt đầu nhé.
+
+  utter_lost_StudentCard:
+  - text: Em mang 3 ảnh 3x4 kèm theo chứng minh thư và 20k lệ phí lên phòng QLNH 101 để làm lại thẻ nhé. 
+
+  utter_default:
+  - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
+
 actions:
 - utter_greet
 - utter_cheer_up
@@ -128,6 +146,10 @@ actions:
 - utter_dl_tuition
 - utter_scholarship
 - utter_warning
+- utter_test_Delay
+- utter_unsubcribe_Request
+- utter_reserve_ScoreTable
+- utter_lost_StudentCard
 # - utter_default
 # - utter_please_rephrase
 # - action_name
