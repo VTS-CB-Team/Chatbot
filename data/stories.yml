@@ -34,6 +34,31 @@ stories:
   - action: utter_thank
   - action: utter_goodbye
 
+- story: score
+  steps:
+  - intent: score
+  - action: utter_score
+
+- story: password
+  steps:
+  - intent: password
+  - action: utter_password
+
+- story: dl_tuition
+  steps:
+  - intent: dl_tuition
+  - action: utter_dl_tuition
+  
+- story: scholarship
+  steps:
+  - intent: scholarship
+  - action: utter_scholarship
+
+- story: warning
+  steps:
+  - intent: warning
+  - action: utter_warning
+
 - story: test_Delay
   steps:
   - intent: test_Delay
