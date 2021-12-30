@@ -9,7 +9,9 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
+    - xin chào
+    - chào ad
+    - em chào ad ạ
     - hey there
     - let's go
     - hey dude
@@ -145,3 +147,50 @@ nlu:
     - Anh có người yêu chưa
     - Hư a phạt
     - láo nháo
+
+- intent: score
+  examples: |
+    - Điểm sai thì làm thế nào?
+    - Điểm thành phần sai
+    - Ad ơi, điểm của em bị sai
+    - Điểm trên công thông tin bị sai
+    - Ctt ghi sai điểm thì phải làm thế nào?
+
+- intent: password
+  examples: |
+    - Anh, chị ơi em bị mất mật khẩu thì phải làm thế nào ạ?
+    - Mất mật khẩu
+    - Mất mật khẩu ctt
+    - Mất mật khẩu cổng thông tin
+    - Em quên mật khẩu ctt thì phải làm sao?
+    - Quên mật khẩu cổng thông tin
+    - Lấy lại mật khẩu ctt
+    - Cách lấy lại mật khẩu công thông tin
+
+- intent: dl_tuition
+  examples: |
+    - Thời hạn đóng học phí
+    - Khoảng thời gian đóng học phí là bao lâu
+    - Khi nào đóng học phí?
+    - Bao giờ đóng học phí?
+    - Đóng học phí
+
+- intent: scholarship
+  examples: |
+    - Điều kiện học bổng
+    - Cách xét học bổng
+    - Đăng ký xét học bổng như thế nào?
+    - Các loại học bổng
+    - Giấy tờ xét học bổng
+    - Hạn nộp đơn xét học bổng
+    - Thông tin học bổng
+
+- intent: warning
+  examples: |
+    - Cảnh cáo học vụ
+    - Bị cảnh cáo lần 1
+    - Bị cảnh cáo lần 2
+    - Bị cảnh cáo lần 3
+    - Khi nào bị cảnh cáo học vụ
+    - Cảnh cáo
+
