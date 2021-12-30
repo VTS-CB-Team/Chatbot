@@ -15,6 +15,10 @@ intents:
   - no_ans
   - thanks
   - out_of_scope
+  - test_Delay
+  - unsubcribe_Request
+  - reserve_ScoreTable
+  - lost_StudentCard
 
 # entities:
 #   - name
@@ -70,9 +74,23 @@ responses:
 
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+  utter_test_Delay:
+  - text: Bạn xin giấy xác nhận của bệnh viện cùng với đơn hoãn thi nộp cho cô Thu phòng QLNH 102 nhé.
   
+  utter_unsubcribe_Request:
+  - text: Chào bạn. Hai tuần đầu của kì học bạn nhé. bạn mua đơn hủy học phần ở quán photo trường mình rồi điền và nộp đơn cho phòng QLNH 101 nhé. Học phí sẽ được trừ sau khi môn được hủy trên cổng thông tin. 
+
+  utter_reserve_ScoreTable:
+  - text: Bạn nộp đơn bảo lưu tại phòng đào tạo. Khi muốn quay lại học bạn làm đơn xin qua lại học trước khi học kì mới bắt đầu nhé.
+
+  utter_lost_StudentCard:
+  - text: Em mang 3 ảnh 3x4 kèm theo chứng minh thư và 20k lệ phí lên phòng QLNH 101 để làm lại thẻ nhé. 
+
   utter_default:
   - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
+
+
 
 actions:
 - utter_greet
@@ -87,6 +105,10 @@ actions:
 - utter_job
 - utter_thank
 - utter_out_of_scope
+- utter_test_Delay
+- utter_unsubcribe_Request
+- utter_reserve_ScoreTable
+- utter_lost_StudentCard
 # - utter_default
 # - utter_please_rephrase
 # - action_name

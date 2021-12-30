@@ -167,7 +167,7 @@ nlu:
     - Không học môn này nữa
     - Xóa môn
 
--intent: reserve_ScoreTable
+- intent: reserve_ScoreTable
   examples: |
     - Anh chị ơi, cho em hỏi, bảo lưu em phải làm những gì?
     - Em muốn bảo lưu
@@ -175,7 +175,7 @@ nlu:
     - Mình muốn dừng học thì sao
     - Mình muốn bảo lưu để năm sau quay lại học có được không
 
--intent: lost_StudentCard
+- intent: lost_StudentCard
   examples: |
     - Mất thẻ sinh viên
     - Mình mất thẻ sinh viên rồi thì làm sao đây
