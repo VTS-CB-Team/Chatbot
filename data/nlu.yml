@@ -231,3 +231,65 @@ nlu:
     - Anh chị ơi, em bị mất thẻ sinh viên thì phải làm thế nào
     - Mình muốn làm lại thẻ sinh viên
     - Thẻ sinh viên mất rồi thì có sao không?
+
+- intent: Giang_vien
+  examples: |
+    - cho mình xin thông tin của thầy [Phan Thanh Đức](giang vien) ạ!
+    - cho mình xin thông tin của thầy [Nguyễn Thanh Thụy](giang vien) ạ!
+    - thông tin của cô [Giang Thị Thu Huyền](giang vien) ad có cho em xin với.
+    - thông tin của cô [Trần Thị Huế](giang vien) ad có cho em xin với.
+    - thông tin của cô [Lê Cẩm Tú](giang vien) ad có cho em xin với
+    - Thông tin thầy [Chu Văn Huy](giang vien) ad có không vậy!
+    - Thông tin thầy [Lê Văn Hùng](giang vien) ad có không vậy!
+    - Thông tin thầy [Lê Quý Tài](giang vien) ad có không vậy!
+    - cho mình xin thông tin của thầy [Vũ Trọng Sinh](giang vien) ạ!
+    - cho mình xin thông tin của thầy [Vũ Duy Hiến](giang vien) ạ!
+    - Em muốn xin thông tin liên lạc của cô [Chu Thị Hồng Hải](giang vien) ạ!
+    - Cách thức để liên lạc với cô [Nguyễn Thị Thùy Anh](giang vien) ad cho mình xin với!
+    - thầy [Đinh Trọng Hiếu](giang vien) thông tin là gì ad ơi
+    - Thông tin của cô [An Phương Điệp](giang vien) ad có không vậy!
+    - Làm sao để có số điện thoại hay là email của cô [Triệu Thu Hương](giang vien) ạ. Ad có cho em xin luôn với
+    - Thông tin về chức vụ của cô [Ngô Thùy Linh](giang vien) là gì ạ
+    - cho mình xin thông tin của thầy [Mai Tấn Tài](giang vien) ạ!
+    - Mình muốn biết cách thức liên lạc với cô [Nguyễn Thị Thu Trang](giang vien) ạ
+    - cô [Nguyễn Thị Yến](giang vien) ad có thông tin cho mình xin với
+- lookup: giang vien
+  examples: |
+    - Đức
+    - đức
+    - Phan Thanh Đức
+    - thầy Phan Thanh Đức
+    - thầy Chu Văn Huy
+    - Chu Văn Huy
+    - thầy huy
+    - Nguyễn Thanh Thụy
+    - thầy thụy
+    - Giang Thị Thu Huyền
+    - cô Huyền
+    - Lê Văn Hùng
+    - thầy hùng
+    - Trần Thị Huế
+    - cô huế
+    - Lê Quý Tài
+    - thầy tài
+    - Nguyễn Phan Tình
+    - Lê Cẩm Tú
+    - Bùi Thị Hồng Nhung
+    - Nguyễn Dương Hùng
+    - Lê Thị Hồng Nhung
+    - Chu Thị Hồng Hải
+    - Nguyễn Thị Thùy Anh
+    - An Phương Điệp
+    - Vũ Duy Hiến
+    - Đinh Trọng Hiếu
+    - Triệu Thu Hương
+    - Ngô Thùy Linh
+    - Mai Tấn Tài
+    - Nguyễn Thị Thu Trang
+    - Vũ Trọng Sinh
+    - thầy Sinh 
+    - Nguyễn Thị Yến
+    - cô Yến
+
+
+

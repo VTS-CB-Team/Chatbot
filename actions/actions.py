@@ -101,12 +101,55 @@
 # 		dispatcher.utter_message(text="Ban muon hoi ve van de gi?", buttons=buttons)
 
 # 		return []
-
+import sqlite3
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import UserUtteranceReverted
 from rasa_sdk.executor import CollectingDispatcher
+
+sqliteConnection = sqlite3.connect(R'C:\Users\LENOVO\rasa_des_ver2\Chatbot\db_GV_Mis.db')
+cursor = sqliteConnection.cursor()
+print("Kết nối thành công")
+
+# Truy vấn sqlite lấy thông tin giảng viên
+class ActionAskKnowledgeBaseLoaiSanPham(Action):
+    def name(self):
+        return "action_custom_Giang_vien"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        text = tracker.latest_message['text']
+        text_input = text
+        thong_tin = next(tracker.get_latest_entity_values("giang vien"), None)
+		# thong_tin_ep = str(thong_tin)
+		# des_tt = tracker.get_latest_entity_values("giang vien")
+
+        sqlite_select_Query = f'''SELECT * from GVs where Hoten like "%{thong_tin}%"'''
+        
+        cursor.execute(sqlite_select_Query)
+        record = cursor.fetchall()
+        check = False
+        print(text_input)
+        result = record[-1]
+        Hoten = result[0]
+        Email = result[1]
+        Chucvu = result[2]
+        SĐt = result[3]
+        # for result in record:
+        #     Hoten = result[0]
+        #     Email = result[1]
+        #     Chucvu = result[2]
+        #     SĐt = result[3]
+        #     if thongtin in text_input:
+        #         check = True
+        #         dispatcher.utter_message("")       
+        # if not check:
+        #     dispatcher.utter_message("")
+        dispatcher.utter_message(f"Đây là thông tin bạn cần về giảng viên {thong_tin} ha: {Hoten}, {Email}, {Chucvu}, {SĐt}")
+        return []
+
 
 # class ActionDefaultFallback(Action):
 #     """Executes the fallback action and goes back to the previous state

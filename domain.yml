@@ -24,9 +24,10 @@ intents:
   - unsubcribe_Request
   - reserve_ScoreTable
   - lost_StudentCard
-# entities:
-#   - name
-#   - surname
+  - Giang_vien
+
+entities:
+  - giang vien
  
 
 # slots:
@@ -39,7 +40,7 @@ intents:
 responses:
   utter_greet:
   - text: "Hi! Bạn có thể cho mình biết tên của bạn được không?"
-  - text: "Hi! Mình có thể giúp gìra được cho bạn?"
+  - text: "Hi! Mình có thể giúp gì được cho bạn?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -125,8 +126,8 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   utter_lost_StudentCard:
   - text: Em mang 3 ảnh 3x4 kèm theo chứng minh thư và 20k lệ phí lên phòng QLNH 101 để làm lại thẻ nhé. 
 
-  utter_default:
-  - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
+  # utter_default:
+  # - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
 
 actions:
 - utter_greet
@@ -150,6 +151,7 @@ actions:
 - utter_unsubcribe_Request
 - utter_reserve_ScoreTable
 - utter_lost_StudentCard
+- action_custom_Giang_vien
 # - utter_default
 # - utter_please_rephrase
 # - action_name

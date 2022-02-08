@@ -16,7 +16,11 @@ rules:
   steps:
   - intent: out_of_scope
   - action: utter_out_of_scope
-
+  
+- rule: hoi giang vien
+  steps:
+  - intent: Giang_vien
+  - action: action_custom_Giang_vien
 # - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
 #   steps:
 #   - intent: nlu_fallback
