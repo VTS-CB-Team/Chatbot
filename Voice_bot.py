@@ -10,7 +10,7 @@ from text_to_speech import texttospeech
 bot_message = ""
 message=""
 
-r = requests.post('http://localhost:5002/webhooks/rest/webhook', json={"message": "Học hệ thống thông tin quản lý ra trường làm gì ạ?"})
+r = requests.post('http://localhost:5002/webhooks/rest/webhook', json={"message": "thông tin của thầy Phan Thanh Đức ad có cho mình xin với ạ"})
 
 print("Bot says, ",end=' ')
 for i in r.json():
