@@ -8,73 +8,73 @@ stories:
   # - action: action_name
   - action: utter_greet
 
-- story: education_program
+- story: Hỏi chương trình đào tạo
   steps:
-  - intent: education_program
-  - action: utter_education_program
+  - intent: Chuong_trinh_dao_tao
+  - action: utter_Chuon_trinh_dao_tao
 
-- story: Admissions
+- story: Hỏi tuyển sinh
   steps:
-  - intent: Admissions
-  - action: utter_Admissions
+  - intent: Tuyen_sinh
+  - action: utter_Tuyen_sinh
 
-- story: tuition
+- story: Hỏi học phí
   steps:
-  - intent: tuition
-  - action: utter_tuition
+  - intent: Hoc_phi
+  - action: utter_Hoc_phi
 
-- story: job
+- story: Hỏi nghề nghiệp
   steps:
-  - intent: job
-  - action: utter_job
+  - intent: Nghe_nghiep
+  - action: utter_Nghe_nghiep
 
-- story: thanks
+- story: Lời cảm ơn
   steps:
-  - intent: thanks
-  - action: utter_thank
+  - intent: Loi_cam_on
+  - action: utter_Loi_cam_on
   - action: utter_goodbye
 
-- story: score
+- story: Hỏi điểm
   steps:
-  - intent: score
-  - action: utter_score
+  - intent: Dien
+  - action: utter_Diem
 
-- story: password
+- story: Mất mật khẩu
   steps:
-  - intent: password
-  - action: utter_password
+  - intent: Mat_mat_khau
+  - action: utter_Mat_mat_khau
 
-- story: dl_tuition
+- story: Thời hạn đóng học phí
   steps:
-  - intent: dl_tuition
-  - action: utter_dl_tuition
+  - intent: Thoi_han_hoc_phi
+  - action: utter_Thoi_han_hoc_phi
   
-- story: scholarship
+- story: Học bổng
   steps:
-  - intent: scholarship
-  - action: utter_scholarship
+  - intent: Hoc_bong
+  - action: utter_Hoc_bong
 
-- story: warning
+- story: Cảnh cáo học vụ
   steps:
-  - intent: warning
-  - action: utter_warning
+  - intent: Canh_cao
+  - action: utter_Canh_cao
   
-- story: test_Delay
+- story: Hoãn thi
   steps:
-  - intent: test_Delay
-  - action: utter_test_Delay
+  - intent: Hoan_thi
+  - action: utter_Hoan_thi
 
-- story: unsubcribe_Request
+- story: Hủy học phần
   steps:
-  - intent: unsubcribe_Request
-  - action: utter_unsubcribe_Request
+  - intent: Huy_hoc_phan
+  - action: utter_Huy_hoc_phan
 
-- story: reserve_ScoreTable
+- story: Bảo lưu
   steps:
-  - intent: reserve_ScoreTable
-  - action: utter_reserve_ScoreTable
+  - intent: Bao_luu_ket_qua
+  - action: utter_Bao_luu_ket_qua
 
-- story: lost_StudentCard
+- story: Mất thẻ SV
   steps:
-  - intent: lost_StudentCard
-  - action: utter_lost_StudentCard
+  - intent: Mat_the_SV
+  - action: utter_Mat_the_SV
