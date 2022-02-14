@@ -215,11 +215,8 @@ nlu:
     - Các bước để hủy thi
     - Hoãn thi sao b êy
     - Các bước để hoãn thi
-    - Hoàn cảnh mình hiện tại không có laptop để \
-    phục vụ cho kì thi online sắp tới. Mình không biết có cách \
-    nào khác không?
-    - Mình ko đủ điều kiện cơ sở vật chất để thi online, có hướng \
-    giải quyết nào ko?
+    - Hoàn cảnh mình hiện tại không có laptop để phục vụ cho kì thi online sắp tới. Mình không biết có cách nào khác không?
+    - Mình ko đủ điều kiện cơ sở vật chất để thi online, có hướng giải quyết nào ko?
     - Mình chỉ có điện thoại để thi online
 
 - intent: Huy_hoc_phan
@@ -230,7 +227,20 @@ nlu:
     - Mình muốn hủy học phần
     - Hủy học phần
     - Không học môn này nữa
-    - Xóa môn
+    - Mình muôn xóa môn thì làm sao
+    - Kì này mình lỡ đăng ký nhiều tín quá thì làm sao đây ??
+    - Mình lỡ tay đăng ký 24 tín rồi, giờ làm sao để giảm
+    - Hủy môn sao b?
+    - Mình k muốn học môn nào đó nữa
+    - Mình muốn học ít
+    - Học quá nhiều môn 
+    - Nhiều môn quá huhu 😥
+    - Giảm số tín
+    - Giảm môn học
+    - Trầm cảm vì quá nhiều môn
+    - Có cách nào để rút môn không
+    - Mình muốn rút bớt môn vì học nhiều quá
+    - Cắt bớt một số môn
 
 - intent: Bao_luu_ket_qua
   examples: |
@@ -239,6 +249,41 @@ nlu:
     - Bảo lưu kết quả thì làm ntn?
     - Mình muốn dừng học thì sao
     - Mình muốn bảo lưu để năm sau quay lại học có được không
+    - Mình muốn lưu lại kết quả để khi nào đó học tiếp
+    - Có được dừng học, lưu lại kết quả không?
+    - Có chính sách bảo lưu ko
+    - Mình muốn tạm thời dừng học thì sao
+    - Trì hoãn việc học tạm thời làm như thế nào?
+    - Em không muốn học năm nay nhưng năm sau vẫn muốn học thì sao
+    - Mình không muốn học năm nay, để khi khác mới học
+    - Mình muốn tạm thời dừng việc học thì sao
+    - E muốn tạm dừng học để trải nghiệm bên ngoài thì e cần làm những gì
+    - Em cảm thấy không phù hợp ngành này, nhưng vẫn muốn học sau này
+    - M cảm thấy chán nản trong việc học, muốn trải nghiệm bên ngoài, nhưng vẫn muốn học để sau này có bằng
+    - Hoàn cảnh nhà mình buộc mình không thể học tiếp năm nay
+    - Năm nay mình không thể tiếp tục học
+    - Mình muốn lưu giữ kết quả thì sao
+
+- intent: Rut_hoc_ba
+  examples: |
+    - Mình muốn chuyển trường thì làm sao
+    - E không muốn học tại đây nữa
+    - E muốn rút học bạ để chuyển trường
+    - Mik muốn rút học bạ để nghỉ do hoàn cảnh
+    - Rút học bạ thì liên hệ với ai
+    - Mình muốn lấy lại học bạ vì lí do cá nhân
+    - Tôi muốn xin học bạ về cho con tôi
+    - Tôi không muốn học trường này nữa, tôi cần học bạ của tôi
+    - Học bạ thì xin rút lại ở đâu
+    - Mình xin thủ tục rút lại học bạ
+    - Có được rút lại học bạ không?
+    - Em muốn xin lại hồ sơ của mình thì làm như nào ạ
+    - Mình cần lấy lại hồ sơ sinh viên để chuyển trường
+    - Vì lí do khác nên mình cần hồ sơ sinh viên
+    - Mình cần rút hồ sơ của mình thì làm ở đâu
+    - Lấy lại hồ sơ sinh viên
+    - Mình muốn chuyển trường nên cần hồ sơ ngay bây giờ thì sao
+    - E muốn đổi ngành khác nên cần học bạ thì làm thủ tục sao 
 
 - intent: Mat_the_SV
   examples: |

@@ -11,7 +11,7 @@ stories:
 - story: Hỏi chương trình đào tạo
   steps:
   - intent: Chuong_trinh_dao_tao
-  - action: utter_Chuon_trinh_dao_tao
+  - action: utter_Chuong_trinh_dao_tao
 
 - story: Hỏi tuyển sinh
   steps:
@@ -36,7 +36,7 @@ stories:
 
 - story: Hỏi điểm
   steps:
-  - intent: Dien
+  - intent: Diem
   - action: utter_Diem
 
 - story: Mất mật khẩu
@@ -73,6 +73,11 @@ stories:
   steps:
   - intent: Bao_luu_ket_qua
   - action: utter_Bao_luu_ket_qua
+
+- story: Rút học bạ - Chuyển trường
+  steps:
+  - intent: Rut_hoc_ba
+  - action: utter_Rut_hoc_ba
 
 - story: Mất thẻ SV
   steps:

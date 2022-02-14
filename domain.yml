@@ -23,6 +23,7 @@ intents:
   - Hoan_thi
   - Huy_hoc_phan
   - Bao_luu_ket_qua
+  - Rut_hoc_ba
   - Mat_the_SV
   - Giang_vien
 
@@ -89,6 +90,37 @@ responses:
   utter_Mat_mat_khau:
   - text: " Bạn lên phòng QLNH 101 xin cấp lại mật khẩu nhé. 3 ngày sau bạn đăng nhập lại với mật khẩu mặc định là 123."
 
+  utter_Rut_hoc_ba:
+  - text: "Vậy, ý bạn là rút học bạ/hồ sơ sinh viên ?\n
+  Đối với việc rút học bạ, mình chưa biết thông tin cụ thể ra sao, nhưng mình sẽ đưa thông tin phòng QLHH để bạn được tư vấn:
+  \nPhòng Phòng 101, 102, 104 - Nhà A2 (Tòa nhà 7 tầng)
+  \nĐiện thoại: 0243 852 1853 - Fax: 84-24-38525024 - E-mail: qlnh@hvnh.edu.vn
+  
+  \nHoặc với ý định chuyển trường thì như sau:
+   \n1. Sinh viên được xét chuyển trường nếu có các điều kiện sau đây:
+	 \na. Trong thời gian học tập, nếu gia đình chuyển nơi cư trú hoặc sinh viên có
+hoàn cảnh khó khăn, cần thiết phải chuyển đến trường gần nơi cư trú của gia đình để
+thuận lợi trong học tập;
+	 \nb. Xin chuyển đến trường có cùng ngành hoặc thuộc cùng nhóm ngành với
+ngành đào tạo mà sinh viên đang học;
+	 \nc. Được sự đồng ý của Hiệu trưởng trường xin chuyển đi và trường xin chuyển đến;
+	 \nd. Không thuộc một trong các trường hợp không được phép chuyển trường
+quy định tại khoản 2 Điều này.
+	 \n2. Sinh viên không được phép chuyển trường trong các trường hợp sau:
+	 \na. Sinh viên đã tham dự kỳ thi tuyển sinh theo đề thi chung, nhưng không trúng
+tuyển vào trường hoặc có kết quả thi thấp hơn điểm trúng tuyển của trường xin chuyển đến;
+	 \nb. Sinh viên thuộc diện nằm ngoài vùng tuyển quy định của trường xin chuyển đến;
+	 \nc. Sinh viên năm thứ nhất và năm cuối khóa;
+	 \nd. Sinh viên đang trong thời gian bị kỷ luật từ cảnh cáo trở lên.
+	 \n3. Thủ tục chuyển trường:
+	 \na. Sinh viên xin chuyển trường phải làm hồ sơ xin chuyển trường theo quy định
+của nhà trường;
+	 \nb. Hiệu trưởng trường có sinh viên xin chuyển đến quyết định tiếp nhận hoặc
+không tiếp nhận; quyết định việc học tập tiếp tục của sinh viên, công nhận các học phần
+mà sinh viên chuyển đến được chuyển đổi kết quả và số học phần phải học bổ sung, trên
+cơ sở so sánh chương trình ở trường sinh viên xin chuyển đi và trường xin chuyển đến
+
+\nMình xin thông tin tới bạn!"
   utter_Thoi_han_hoc_phi:
   - text: "Thời gian đóng học phí là trong 3 tuần đầu của học kì chính bạn nhé."
 
@@ -150,6 +182,7 @@ actions:
 - utter_Hoan_thi
 - utter_Huy_hoc_phan
 - utter_Bao_luu_ket_qua
+- utter_Rut_hoc_ba
 - utter_Mat_the_SV
 - action_custom_Giang_vien
 # - utter_default
