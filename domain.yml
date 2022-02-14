@@ -24,6 +24,7 @@ intents:
   - Huy_hoc_phan
   - Bao_luu_ket_qua
   - Rut_hoc_ba
+  - Phuc_khao
   - Mat_the_SV
   - Giang_vien
 
@@ -121,6 +122,15 @@ mà sinh viên chuyển đến được chuyển đổi kết quả và số h�
 cơ sở so sánh chương trình ở trường sinh viên xin chuyển đi và trường xin chuyển đến
 
 \nMình xin thông tin tới bạn!"
+
+  utter_Phuc_khao:
+  - text: "Mình xin gửi hướng dẫn phúc tra/phúc khảo ở dưới:\n
+  https://hvnh.edu.vn/qlnh/vi/sinh-vien-can-biet/quy-dinh-ve-de-nghi-phuc-tra-bai-thi-ket-thuc-hoc-phan-465.html\n
+  
+  \t Còn bạn hỏi có nên phúc khảo không 😀? Mình nghĩ nếu bạn siêu siêu tự tin vào bài làm cũng như năng lực của mình\n
+  thì mình nghĩ tất nhiên là có rồi. Nhưng nếu điểm bạn dự định sau phúc khảo mà không đủ bạn lên điểm A, B hoặc C thì mình\n
+  nghĩ không nên, bạn có thể dùng số tiền đó để đi ăn giải buồn này 🤣!!"
+
   utter_Thoi_han_hoc_phi:
   - text: "Thời gian đóng học phí là trong 3 tuần đầu của học kì chính bạn nhé."
 
@@ -183,6 +193,7 @@ actions:
 - utter_Huy_hoc_phan
 - utter_Bao_luu_ket_qua
 - utter_Rut_hoc_ba
+- utter_Phuc_khao
 - utter_Mat_the_SV
 - action_custom_Giang_vien
 # - utter_default

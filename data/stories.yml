@@ -79,6 +79,11 @@ stories:
   - intent: Rut_hoc_ba
   - action: utter_Rut_hoc_ba
 
+- story: Phúc khảo
+  steps:
+  - intent: Phuc_khao
+  - action: utter_Phuc_khao
+
 - story: Mất thẻ SV
   steps:
   - intent: Mat_the_SV

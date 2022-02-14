@@ -285,6 +285,32 @@ nlu:
     - Mình muốn chuyển trường nên cần hồ sơ ngay bây giờ thì sao
     - E muốn đổi ngành khác nên cần học bạ thì làm thủ tục sao 
 
+- intent: Phuc_khao
+  examples: |
+    - Điểm em không như mong muốn, em muốn phúc khảo thì làm thế nào ạ
+    - Điểm mình ko như dự định ban đầu
+    - Mình nghĩ bài kiểm tra này của mình chấm chưa đúng
+    - Bài kiểm tra của mình chấm có thể bị thiếu
+    - Mình bị chấm thiếu nhiều điểm thì sao giờ
+    - Cho t hỏi thủ tục phúc khảo như thế nào?
+    - Mình muốn thầy cô chấm lại bài của mình thì như thế nào
+    - Mình cần chấm lại bài của mình
+    - Bài thi cuối kì thấp quá b ơi, mình không ngờ lại thấp như thế 😥😥
+    - Mình ko thể tin dc bài thi lại quá thấp, mình muốn kiểm tra lại thì sao
+    - Thầy cô có lẽ chấm sai cho mình, mình cần hỏi thủ tục phúc khảo
+    - Không thể tin điểm mình quá thấp so với dự định !
+    - Phúc khảo ở đâu b ?
+    - Phúc khảo sao b êy
+    - Cho t hỏi phúc khảo ra sao
+    - Cái giá phải trả khi phúc khảo là j b
+    - Mình xin lệ phí phúc khảo cái
+    - Lệ phí phúc khảo
+    - Mình lo lắng quá, k biết nên phúc khảo k
+    - Có nên phúc khảo k b 
+    - Điểm chát quá chán, xin hướng dẫn phúc khảo
+    - Chán thầy cô thật, chỉ phúc khảo đê
+    - Hướng dẫn phúc khảo
+
 - intent: Mat_the_SV
   examples: |
     - Mất thẻ sinh viên
@@ -292,6 +318,16 @@ nlu:
     - Anh chị ơi, em bị mất thẻ sinh viên thì phải làm thế nào
     - Mình muốn làm lại thẻ sinh viên
     - Thẻ sinh viên mất rồi thì có sao không?
+    - Chán thật, mất xừ thẻ sinh viên, có cách nào cấp lại k b
+    - Lô, cần lấy lại thẻ sinh viên
+    - Mình cần cấp lại thẻ sinh viên
+    - Thẻ định danh của mình bị thất lạc, có cách nào lấy lại k
+    - Thẻ sinh viên mất tiu òi huhu 😥
+    - Tớ mất thẻ SV r
+    - Thẻ SV thất lạc r, giờ sao b
+    - Tôi mất thẻ SV, cần cấp lại b êy
+    - Bạn cho mình hỏi, giờ muốn lấy thẻ SV thì lấy đâu b
+    - Mình chưa có thẻ SV
 
 - intent: Giang_vien
   examples: |
