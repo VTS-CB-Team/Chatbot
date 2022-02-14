@@ -94,7 +94,7 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: Admissions
+- intent: Tuyen_sinh
   examples: |
     - Khoa hệ thống thông tin chỉ tiêu tuyển sinh năm nay là bao nhiêu ạ?
     - Chỉ tiêu cho xét tuyểt học bạ khoa mình là bao nhiêu ạ?
@@ -102,14 +102,14 @@ nlu:
     - Tuyển thẳng chiếm bao nhiêu phần trăm chỉ tiêu ạ?
     - xét tuyển dựa trên kết quả học tập THPT là bao nhiêu ạ?
 
-- intent: education_program
+- intent: Chuong_trinh_dao_tao
   examples: |
     - Chương trình đào tạo của khoa như nào ạ?
     - Tỷ lệ kiến thức về kinh tế chiếm bao nhiêu phần trăm tổng chương trình học vậy ạ?
     - có sự thay đổi trong khung chương trình đào tạo không ạ
     - chương trình đào tạo có điều gì khác biệt không ạ
     
-- intent: tuition
+- intent: Hoc_phi
   examples: |
     - Học phí của trường là bao nhiêu ạ?
     - Học phí có tăng so với năm trước không ạ?
@@ -117,7 +117,7 @@ nlu:
     - em muốn biết thông tin về học phí
     - học phí có thay đổi gì không ạ?
 
-- intent: job
+- intent: Nghe_nghiep
   examples: |
     - Học hệ thống thông tin quản lý ra trường làm gì ạ?
     - Công việc cho ngành này như thế nào ạ?
@@ -125,20 +125,20 @@ nlu:
     - ngành này có thể đảm nhiệm những công việc nào
     - làm được gì khi học khoa hệ thống ra ạ
 
-- intent: no_ans
+- intent: Ket_thuc_cau_hoi
   examples: |
     - Không ạ
     - No
     - N
     - Hết rồi ạ
 
-- intent: thanks
+- intent: Loi_cam_on
   examples: |
     - Cảm ơn ad đã tư vấn ạ.
     - Cảm ơn ad nhiều ạ
     - thanks
 
-- intent: out_of_scope
+- intent: Chit_chat
   examples: |
     - Ad ăn cơm chưa?
     - Ad có tạch môn nào trong quá trình học chưa ạ?
@@ -148,7 +148,7 @@ nlu:
     - Hư a phạt
     - láo nháo
 
-- intent: score
+- intent: Diem
   examples: |
     - Điểm sai thì làm thế nào?
     - Điểm thành phần sai
@@ -156,7 +156,7 @@ nlu:
     - Điểm trên công thông tin bị sai
     - Ctt ghi sai điểm thì phải làm thế nào?
 
-- intent: password
+- intent: Mat_mat_khau
   examples: |
     - Anh, chị ơi em bị mất mật khẩu thì phải làm thế nào ạ?
     - Mất mật khẩu
@@ -167,7 +167,7 @@ nlu:
     - Lấy lại mật khẩu ctt
     - Cách lấy lại mật khẩu công thông tin
 
-- intent: dl_tuition
+- intent: Thoi_han_hoc_phi
   examples: |
     - Thời hạn đóng học phí
     - Khoảng thời gian đóng học phí là bao lâu
@@ -175,7 +175,7 @@ nlu:
     - Bao giờ đóng học phí?
     - Đóng học phí
 
-- intent: scholarship
+- intent: Hoc_bong
   examples: |
     - Điều kiện học bổng
     - Cách xét học bổng
@@ -187,7 +187,7 @@ nlu:
     - Học bổng
     - HỌc bổng trường mình như nào
 
-- intent: warning
+- intent: Canh_cao
   examples: |
     - Cảnh cáo học vụ
     - Bị cảnh cáo lần 1
@@ -195,8 +195,8 @@ nlu:
     - Bị cảnh cáo lần 3
     - Khi nào bị cảnh cáo học vụ
     - Cảnh cáo
-# Education Procedure
-- intent: test_Delay
+# Thủ tục sinh viên
+- intent: Hoan_thi
   examples: |
     - Chào bạn. Cho mình hỏi thủ tục hoãn thi với
     - Thủ tục hoãn thi
@@ -205,8 +205,24 @@ nlu:
     - Dừng thi kỳ này
     - Không muốn thi kỳ này
     - Hiện tại mình có việc muốn hoãn thi
+    - Nhà mình có việc bận, m ko tham gia thi được
+    - Do điều kiện, mình không tham gia thi được
+    - Mình muốn bỏ thi kì này
+    - Không thi thì có sao không nhỉ ?
+    - Mình ko thích thi thì làm thế nào
+    - Mình không thể thi ngay bây h được, các b giúp mình với
+    - Mình muốn từ chối thi thì sao
+    - Các bước để hủy thi
+    - Hoãn thi sao b êy
+    - Các bước để hoãn thi
+    - Hoàn cảnh mình hiện tại không có laptop để \
+    phục vụ cho kì thi online sắp tới. Mình không biết có cách \
+    nào khác không?
+    - Mình ko đủ điều kiện cơ sở vật chất để thi online, có hướng \
+    giải quyết nào ko?
+    - Mình chỉ có điện thoại để thi online
 
-- intent: unsubcribe_Request
+- intent: Huy_hoc_phan
   examples: |
     - Anh chị ơi, cho em hỏi khi nào được nộp đơn hủy
     - Admin ơi, cho mình hỏi khi nào được nộp đơn hủy
@@ -216,7 +232,7 @@ nlu:
     - Không học môn này nữa
     - Xóa môn
 
-- intent: reserve_ScoreTable
+- intent: Bao_luu_ket_qua
   examples: |
     - Anh chị ơi, cho em hỏi, bảo lưu em phải làm những gì?
     - Em muốn bảo lưu
@@ -224,7 +240,7 @@ nlu:
     - Mình muốn dừng học thì sao
     - Mình muốn bảo lưu để năm sau quay lại học có được không
 
-- intent: lost_StudentCard
+- intent: Mat_the_SV
   examples: |
     - Mất thẻ sinh viên
     - Mình mất thẻ sinh viên rồi thì làm sao đây

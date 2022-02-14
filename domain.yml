@@ -8,22 +8,22 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - education_program
-  - Admissions
-  - tuition
-  - job
-  - no_ans
-  - thanks
-  - out_of_scope
-  - score
-  - password
-  - dl_tuition
-  - scholarship
-  - warning
-  - test_Delay
-  - unsubcribe_Request
-  - reserve_ScoreTable
-  - lost_StudentCard
+  - Chuong_trinh_dao_tao
+  - Tuyen_sinh
+  - Hoc_phi
+  - Nghe_nghiep
+  - Ket_thuc_cau_hoi
+  - Loi_cam_on
+  - Chit_chat
+  - Diem
+  - Mat_mat_khau
+  - Thoi_han_hoc_phi
+  - Hoc_bong
+  - Canh_cao
+  - Hoan_thi
+  - Huy_hoc_phan
+  - Bao_luu_ket_qua
+  - Mat_the_SV
   - Giang_vien
 
 entities:
@@ -59,22 +59,22 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_education_program:
+  utter_Chuong_trinh_dao_tao:
   - text: "Chương trình đào tạo của khoa Mis đào tạo hai lĩnh vực nghiệp vụ và kỹ thuật (50% kinh tế, 50% CNTT). Khoa đào tạo chuyên sâu 2 chuyên ngành: Hệ thống thông tin doanh nghiệp và hệ thống thông tin ngân hàng."
 
-  utter_Admissions:
+  utter_Tuyen_sinh:
   - text: "Chỉ tiêu tuyển sinh năm nay của khoa là 100. Trong đó tuyển thẳng chiếm tối đa 5%, xét dựa trên kết quả học tập THPT tối đa 25%, xét dựa vào chứng chỉ ngoại ngữ tối đa 10% trong tổng số chỉ tiêu của cả học viện"
 
-  utter_tuition:
+  utter_Hoc_phi:
   - text: "Học phí của hệ chính quy hệ đại học hiện là 290.000đ/tín, hệ cao đẳng là: 213.000đ/tín. Để biết thêm thông tin chi tiết bạn có thể truy cập địa chỉ: https://hvnh.edu.vn/tckt/vi/hoc-phi/muc-thu-hoc-phi-dich-vu-khac-cho-cac-he-dao-tao-nam-hoc-2021-2022-58.html"
 
-  utter_job:
+  utter_Nghe_nghiep:
   - text: "Một số vị trí việc làm tiêu biểu khi học khoa hệ thống thông tin quản lý như: Phân tích nghiệp vụ, phân tích dữ liệu kinh doanh, quản trị dữ liệu, phân tích và phát triển hệ thống thông tin kinh tế, kiểm thử phần mềm, phát triển phần mềm..."
 
-  utter_thank:
+  utter_Loi_cam_on:
   - text: "Cảm ơn bạn đã quan tâm. Nếu có thắc mắc bạn hãy nói cho mình biết nhé."
 
-  utter_out_of_scope:
+  utter_Chit_chat:
   - text: "Xin lỗi câu hỏi của bạn ngoài phạm vi cung cấp thông tin của chúng tôi. Chúng tôi sẽ cố cập nhật thông tin sớm nhất để phù hợp với câu hỏi của bạn. Bạn còn câu hỏi khác không ạ?"
 
   utter_please_rephrase:
@@ -83,16 +83,16 @@ responses:
   utter_default:
   - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
 
-  utter_score:
+  utter_Diem:
   - text: "Trong thời gian 1 tuần kể từ khi điểm lên CTT nếu phát hiện sai sót, bạn trực tiếp liên hệ với giảng viên dạy bạn rồi lên văn phòng Khoa làm đơn để sửa điểm nhé."
 
-  utter_password:
+  utter_Mat_mat_khau:
   - text: " Bạn lên phòng QLNH 101 xin cấp lại mật khẩu nhé. 3 ngày sau bạn đăng nhập lại với mật khẩu mặc định là 123."
 
-  utter_dl_tuition:
+  utter_Thoi_han_hoc_phi:
   - text: "Thời gian đóng học phí là trong 3 tuần đầu của học kì chính bạn nhé."
 
-  utter_scholarship:
+  utter_Hoc_bong:
   - text: "Có các loại học bổng:
 1. Học bổng khuyến khích học tập từng kì, điểm từ cao xuống thấp, mỗi khóa khoảng trên 150 sv
 2. Học phần ngân hàng tuỳ theo điều kiện từng ngân hàng như điểm rèn luyện, tích lũy, hoàn cảnh....
@@ -111,19 +111,19 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
 Để biết thêm thông tin và điều kiện xét bạn có thể tham khảo trên fanpage CLB ACC.
 "
 
-  utter_warning:
+  utter_Canh_cao:
   - text: "Quy định cụ thể trong Sổ tay sinh viên (Điểm trung bình chung tích lũy 1.2 đối với sv năm nhất. 1.4, 1.6, 1.8 đối với sinh viên năm 2, 3, 4). Danh sách có trên cổng thông tin. 3 lần cảnh cáo liên tiếp sinh viên sẽ bị đuổi học. Từ lần cảnh cáo thứ 2 sẽ có giấy báo về gia đình nhé."
 
-  utter_test_Delay:
+  utter_Hoan_thi:
   - text: Bạn xin giấy xác nhận của bệnh viện cùng với đơn hoãn thi nộp cho cô Thu phòng QLNH 102 nhé.
   
-  utter_unsubcribe_Request:
+  utter_Huy_hoc_phan:
   - text: Chào bạn. Hai tuần đầu của kì học bạn nhé. bạn mua đơn hủy học phần ở quán photo trường mình rồi điền và nộp đơn cho phòng QLNH 101 nhé. Học phí sẽ được trừ sau khi môn được hủy trên cổng thông tin. 
 
-  utter_reserve_ScoreTable:
+  utter_Bao_luu_ket_qua:
   - text: Bạn nộp đơn bảo lưu tại phòng đào tạo. Khi muốn quay lại học bạn làm đơn xin qua lại học trước khi học kì mới bắt đầu nhé.
 
-  utter_lost_StudentCard:
+  utter_Mat_the_SV:
   - text: Em mang 3 ảnh 3x4 kèm theo chứng minh thư và 20k lệ phí lên phòng QLNH 101 để làm lại thẻ nhé. 
 
   # utter_default:
@@ -136,21 +136,21 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_iamabot
-- utter_education_program
-- utter_Admissions
-- utter_tuition
-- utter_job
-- utter_thank
-- utter_out_of_scope
-- utter_score
-- utter_password
-- utter_dl_tuition
-- utter_scholarship
-- utter_warning
-- utter_test_Delay
-- utter_unsubcribe_Request
-- utter_reserve_ScoreTable
-- utter_lost_StudentCard
+- utter_Chuong_trinh_dao_tao
+- utter_Tuyen_sinh
+- utter_Hoc_phi
+- utter_Nghe_nghiep
+- utter_Loi_cam_on
+- utter_Chit_chat
+- utter_Diem
+- utter_Mat_mat_khau
+- utter_Thoi_han_hoc_phi
+- utter_Hoc_bong
+- utter_Canh_cao
+- utter_Hoan_thi
+- utter_Huy_hoc_phan
+- utter_Bao_luu_ket_qua
+- utter_Mat_the_SV
 - action_custom_Giang_vien
 # - utter_default
 # - utter_please_rephrase
