@@ -1,392 +1,403 @@
 version: "2.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - xin chào
-    - chào ad
-    - em chào ad ạ
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-    - Ad ơi
+    - intent: greet
+      examples: |
+          - hey
+          - hello
+          - hi
+          - hello there
+          - good morning
+          - good evening
+          - xin chào
+          - chào ad
+          - em chào ad ạ
+          - hey there
+          - let's go
+          - hey dude
+          - goodmorning
+          - goodevening
+          - good afternoon
+          - Ad ơi
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - intent: goodbye
+      examples: |
+          - good afternoon
+          - cu
+          - good by
+          - cee you later
+          - good night
+          - bye
+          - goodbye
+          - have a nice day
+          - see you around
+          - bye bye
+          - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - intent: affirm
+      examples: |
+          - yes
+          - y
+          - indeed
+          - of course
+          - that sounds good
+          - correct
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - intent: deny
+      examples: |
+          - no
+          - n
+          - never
+          - I don't think so
+          - don't like that
+          - no way
+          - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - intent: mood_great
+      examples: |
+          - perfect
+          - great
+          - amazing
+          - feeling like a king
+          - wonderful
+          - I am feeling very good
+          - I am great
+          - I am amazing
+          - I am going to save the world
+          - super stoked
+          - extremely good
+          - so so perfect
+          - so good
+          - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - intent: mood_unhappy
+      examples: |
+          - my day was horrible
+          - I am sad
+          - I don't feel very well
+          - I am disappointed
+          - super sad
+          - I'm so sad
+          - sad
+          - very sad
+          - unhappy
+          - not good
+          - not very good
+          - extremly sad
+          - so saad
+          - so sad
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - intent: bot_challenge
+      examples: |
+          - are you a bot?
+          - are you a human?
+          - am I talking to a bot?
+          - am I talking to a human?
 
-- intent: Tuyen_sinh
-  examples: |
-    - Khoa hệ thống thông tin chỉ tiêu tuyển sinh năm nay là bao nhiêu ạ?
-    - Chỉ tiêu cho xét tuyểt học bạ khoa mình là bao nhiêu ạ?
-    - Xét tuyển kết hợp với chứng chỉ tiếng anh thì cơ hộ đỗ là bao nhiêu ạ?
-    - Tuyển thẳng chiếm bao nhiêu phần trăm chỉ tiêu ạ?
-    - xét tuyển dựa trên kết quả học tập THPT là bao nhiêu ạ?
+    - intent: Tuyen_sinh
+      examples: |
+          - Khoa hệ thống thông tin chỉ tiêu tuyển sinh năm nay là bao nhiêu ạ?
+          - Chỉ tiêu cho xét tuyểt học bạ khoa mình là bao nhiêu ạ?
+          - Xét tuyển kết hợp với chứng chỉ tiếng anh thì cơ hộ đỗ là bao nhiêu ạ?
+          - Tuyển thẳng chiếm bao nhiêu phần trăm chỉ tiêu ạ?
+          - xét tuyển dựa trên kết quả học tập THPT là bao nhiêu ạ?
 
-- intent: Chuong_trinh_dao_tao
-  examples: |
-    - Chương trình đào tạo của khoa như nào ạ?
-    - Tỷ lệ kiến thức về kinh tế chiếm bao nhiêu phần trăm tổng chương trình học vậy ạ?
-    - có sự thay đổi trong khung chương trình đào tạo không ạ
-    - chương trình đào tạo có điều gì khác biệt không ạ
-    
-- intent: Hoc_phi
-  examples: |
-    - Học phí của trường là bao nhiêu ạ?
-    - Học phí có tăng so với năm trước không ạ?
-    - học phí
-    - em muốn biết thông tin về học phí
-    - học phí có thay đổi gì không ạ?
+    - intent: Chuong_trinh_dao_tao
+      examples: |
+          - Chương trình đào tạo của khoa như nào ạ?
+          - Tỷ lệ kiến thức về kinh tế chiếm bao nhiêu phần trăm tổng chương trình học vậy ạ?
+          - có sự thay đổi trong khung chương trình đào tạo không ạ
+          - chương trình đào tạo có điều gì khác biệt không ạ
 
-- intent: Nghe_nghiep
-  examples: |
-    - Học hệ thống thông tin quản lý ra trường làm gì ạ?
-    - Công việc cho ngành này như thế nào ạ?
-    - Có thể làm trong lĩnh vực nào nếu học khoa mình ra ạ?
-    - ngành này có thể đảm nhiệm những công việc nào
-    - làm được gì khi học khoa hệ thống ra ạ
+    - intent: Hoc_phi
+      examples: |
+          - Học phí của trường là bao nhiêu ạ?
+          - Học phí có tăng so với năm trước không ạ?
+          - học phí
+          - em muốn biết thông tin về học phí
+          - học phí có thay đổi gì không ạ?
 
-- intent: Ket_thuc_cau_hoi
-  examples: |
-    - Không ạ
-    - No
-    - N
-    - Hết rồi ạ
+    - intent: Nghe_nghiep
+      examples: |
+          - Học hệ thống thông tin quản lý ra trường làm gì ạ?
+          - Công việc cho ngành này như thế nào ạ?
+          - Có thể làm trong lĩnh vực nào nếu học khoa mình ra ạ?
+          - ngành này có thể đảm nhiệm những công việc nào
+          - làm được gì khi học khoa hệ thống ra ạ
 
-- intent: Loi_cam_on
-  examples: |
-    - Cảm ơn ad đã tư vấn ạ.
-    - Cảm ơn ad nhiều ạ
-    - thanks
+    - intent: Ket_thuc_cau_hoi
+      examples: |
+          - Không ạ
+          - No
+          - N
+          - Hết rồi ạ
 
-- intent: Chit_chat
-  examples: |
-    - Ad ăn cơm chưa?
-    - Ad có tạch môn nào trong quá trình học chưa ạ?
-    - Tào lao
-    - sdgsahduad adakdua
-    - Anh có người yêu chưa
-    - Hư a phạt
-    - láo nháo
+    - intent: Loi_cam_on
+      examples: |
+          - Cảm ơn ad đã tư vấn ạ.
+          - Cảm ơn ad nhiều ạ
+          - thanks
 
-- intent: Diem
-  examples: |
-    - Điểm sai thì làm thế nào?
-    - Điểm thành phần sai
-    - Ad ơi, điểm của em bị sai
-    - Điểm trên công thông tin bị sai
-    - Ctt ghi sai điểm thì phải làm thế nào?
+    - intent: Chit_chat
+      examples: |
+          - Ad ăn cơm chưa?
+          - Ad có tạch môn nào trong quá trình học chưa ạ?
+          - Tào lao
+          - sdgsahduad adakdua
+          - Anh có người yêu chưa
+          - Hư a phạt
+          - láo nháo
 
-- intent: Mat_mat_khau
-  examples: |
-    - Anh, chị ơi em bị mất mật khẩu thì phải làm thế nào ạ?
-    - Mất mật khẩu
-    - Mất mật khẩu ctt
-    - Mất mật khẩu cổng thông tin
-    - Em quên mật khẩu ctt thì phải làm sao?
-    - Quên mật khẩu cổng thông tin
-    - Lấy lại mật khẩu ctt
-    - Cách lấy lại mật khẩu công thông tin
+    - intent: Diem
+      examples: |
+          - Điểm sai thì làm thế nào?
+          - Điểm thành phần sai
+          - Ad ơi, điểm của em bị sai
+          - Điểm trên công thông tin bị sai
+          - Ctt ghi sai điểm thì phải làm thế nào?
 
-- intent: Thoi_han_hoc_phi
-  examples: |
-    - Thời hạn đóng học phí
-    - Khoảng thời gian đóng học phí là bao lâu
-    - Khi nào đóng học phí?
-    - Bao giờ đóng học phí?
-    - Đóng học phí
+    - intent: Mat_mat_khau
+      examples: |
+          - Anh, chị ơi em bị mất mật khẩu thì phải làm thế nào ạ?
+          - Mất mật khẩu
+          - Mất mật khẩu ctt
+          - Mất mật khẩu cổng thông tin
+          - Em quên mật khẩu ctt thì phải làm sao?
+          - Quên mật khẩu cổng thông tin
+          - Lấy lại mật khẩu ctt
+          - Cách lấy lại mật khẩu công thông tin
 
-- intent: Hoc_bong
-  examples: |
-    - Điều kiện học bổng
-    - Cách xét học bổng
-    - Đăng ký xét học bổng như thế nào?
-    - Các loại học bổng
-    - Giấy tờ xét học bổng
-    - Hạn nộp đơn xét học bổng
-    - Thông tin học bổng
-    - Học bổng
-    - HỌc bổng trường mình như nào
+    - intent: Thoi_han_hoc_phi
+      examples: |
+          - Thời hạn đóng học phí
+          - Khoảng thời gian đóng học phí là bao lâu
+          - Khi nào đóng học phí?
+          - Bao giờ đóng học phí?
+          - Đóng học phí
 
-- intent: Canh_cao
-  examples: |
-    - Cảnh cáo học vụ
-    - Bị cảnh cáo lần 1
-    - Bị cảnh cáo lần 2
-    - Bị cảnh cáo lần 3
-    - Khi nào bị cảnh cáo học vụ
-    - Cảnh cáo
-# Thủ tục sinh viên
-- intent: Hoan_thi
-  examples: |
-    - Chào bạn. Cho mình hỏi thủ tục hoãn thi với
-    - Thủ tục hoãn thi
-    - Hoãn thi như thế nào ?
-    - Mình muốn dừng thi kỳ này
-    - Dừng thi kỳ này
-    - Không muốn thi kỳ này
-    - Hiện tại mình có việc muốn hoãn thi
-    - Nhà mình có việc bận, m ko tham gia thi được
-    - Do điều kiện, mình không tham gia thi được
-    - Mình muốn bỏ thi kì này
-    - Không thi thì có sao không nhỉ ?
-    - Mình ko thích thi thì làm thế nào
-    - Mình không thể thi ngay bây h được, các b giúp mình với
-    - Mình muốn từ chối thi thì sao
-    - Các bước để hủy thi
-    - Hoãn thi sao b êy
-    - Các bước để hoãn thi
-    - Hoàn cảnh mình hiện tại không có laptop để phục vụ cho kì thi online sắp tới. Mình không biết có cách nào khác không?
-    - Mình ko đủ điều kiện cơ sở vật chất để thi online, có hướng giải quyết nào ko?
-    - Mình chỉ có điện thoại để thi online
+    - intent: Hoc_bong
+      examples: |
+          - Điều kiện học bổng
+          - Cách xét học bổng
+          - Đăng ký xét học bổng như thế nào?
+          - Các loại học bổng
+          - Giấy tờ xét học bổng
+          - Hạn nộp đơn xét học bổng
+          - Thông tin học bổng
+          - Học bổng
+          - HỌc bổng trường mình như nào
 
-- intent: Huy_hoc_phan
-  examples: |
-    - Anh chị ơi, cho em hỏi khi nào được nộp đơn hủy
-    - Admin ơi, cho mình hỏi khi nào được nộp đơn hủy
-    - Bao giờ được nộp đơn hủy?
-    - Mình muốn hủy học phần
-    - Hủy học phần
-    - Không học môn này nữa
-    - Mình muôn xóa môn thì làm sao
-    - Kì này mình lỡ đăng ký nhiều tín quá thì làm sao đây ??
-    - Mình lỡ tay đăng ký 24 tín rồi, giờ làm sao để giảm
-    - Hủy môn sao b?
-    - Mình k muốn học môn nào đó nữa
-    - Mình muốn học ít
-    - Học quá nhiều môn 
-    - Nhiều môn quá huhu 😥
-    - Giảm số tín
-    - Giảm môn học
-    - Trầm cảm vì quá nhiều môn
-    - Có cách nào để rút môn không
-    - Mình muốn rút bớt môn vì học nhiều quá
-    - Cắt bớt một số môn
+    - intent: Canh_cao
+      examples: |
+          - Cảnh cáo học vụ
+          - Bị cảnh cáo lần 1
+          - Bị cảnh cáo lần 2
+          - Bị cảnh cáo lần 3
+          - Khi nào bị cảnh cáo học vụ
+          - Cảnh cáo
+    # Thủ tục sinh viên
+    - intent: Hoan_thi
+      examples: |
+          - Chào bạn. Cho mình hỏi thủ tục hoãn thi với
+          - Thủ tục hoãn thi
+          - Hoãn thi như thế nào ?
+          - Mình muốn dừng thi kỳ này
+          - Dừng thi kỳ này
+          - Không muốn thi kỳ này
+          - Hiện tại mình có việc muốn hoãn thi
+          - Nhà mình có việc bận, m ko tham gia thi được
+          - Do điều kiện, mình không tham gia thi được
+          - Mình muốn bỏ thi kì này
+          - Không thi thì có sao không nhỉ ?
+          - Mình ko thích thi thì làm thế nào
+          - Mình không thể thi ngay bây h được, các b giúp mình với
+          - Mình muốn từ chối thi thì sao
+          - Các bước để hủy thi
+          - Hoãn thi sao b êy
+          - Các bước để hoãn thi
+          - Hoàn cảnh mình hiện tại không có laptop để phục vụ cho kì thi online sắp tới. Mình không biết có cách nào khác không?
+          - Mình ko đủ điều kiện cơ sở vật chất để thi online, có hướng giải quyết nào ko?
+          - Mình chỉ có điện thoại để thi online
 
-- intent: Bao_luu_ket_qua
-  examples: |
-    - Anh chị ơi, cho em hỏi, bảo lưu em phải làm những gì?
-    - Em muốn bảo lưu
-    - Bảo lưu kết quả thì làm ntn?
-    - Mình muốn dừng học thì sao
-    - Mình muốn bảo lưu để năm sau quay lại học có được không
-    - Mình muốn lưu lại kết quả để khi nào đó học tiếp
-    - Có được dừng học, lưu lại kết quả không?
-    - Có chính sách bảo lưu ko
-    - Mình muốn tạm thời dừng học thì sao
-    - Trì hoãn việc học tạm thời làm như thế nào?
-    - Em không muốn học năm nay nhưng năm sau vẫn muốn học thì sao
-    - Mình không muốn học năm nay, để khi khác mới học
-    - Mình muốn tạm thời dừng việc học thì sao
-    - E muốn tạm dừng học để trải nghiệm bên ngoài thì e cần làm những gì
-    - Em cảm thấy không phù hợp ngành này, nhưng vẫn muốn học sau này
-    - M cảm thấy chán nản trong việc học, muốn trải nghiệm bên ngoài, nhưng vẫn muốn học để sau này có bằng
-    - Hoàn cảnh nhà mình buộc mình không thể học tiếp năm nay
-    - Năm nay mình không thể tiếp tục học
-    - Mình muốn lưu giữ kết quả thì sao
+    - intent: Huy_hoc_phan
+      examples: |
+          - Anh chị ơi, cho em hỏi khi nào được nộp đơn hủy
+          - Admin ơi, cho mình hỏi khi nào được nộp đơn hủy
+          - Bao giờ được nộp đơn hủy?
+          - Mình muốn hủy học phần
+          - Hủy học phần
+          - Không học môn này nữa
+          - Mình muôn xóa môn thì làm sao
+          - Kì này mình lỡ đăng ký nhiều tín quá thì làm sao đây ??
+          - Mình lỡ tay đăng ký 24 tín rồi, giờ làm sao để giảm
+          - Hủy môn sao b?
+          - Mình k muốn học môn nào đó nữa
+          - Mình muốn học ít
+          - Học quá nhiều môn 
+          - Nhiều môn quá huhu 😥
+          - Giảm số tín
+          - Giảm môn học
+          - Trầm cảm vì quá nhiều môn
+          - Có cách nào để rút môn không
+          - Mình muốn rút bớt môn vì học nhiều quá
+          - Cắt bớt một số môn
 
-- intent: Rut_hoc_ba
-  examples: |
-    - Mình muốn chuyển trường thì làm sao
-    - E không muốn học tại đây nữa
-    - E muốn rút học bạ để chuyển trường
-    - Mik muốn rút học bạ để nghỉ do hoàn cảnh
-    - Rút học bạ thì liên hệ với ai
-    - Mình muốn lấy lại học bạ vì lí do cá nhân
-    - Tôi muốn xin học bạ về cho con tôi
-    - Tôi không muốn học trường này nữa, tôi cần học bạ của tôi
-    - Học bạ thì xin rút lại ở đâu
-    - Mình xin thủ tục rút lại học bạ
-    - Có được rút lại học bạ không?
-    - Em muốn xin lại hồ sơ của mình thì làm như nào ạ
-    - Mình cần lấy lại hồ sơ sinh viên để chuyển trường
-    - Vì lí do khác nên mình cần hồ sơ sinh viên
-    - Mình cần rút hồ sơ của mình thì làm ở đâu
-    - Lấy lại hồ sơ sinh viên
-    - Mình muốn chuyển trường nên cần hồ sơ ngay bây giờ thì sao
-    - E muốn đổi ngành khác nên cần học bạ thì làm thủ tục sao 
+    - intent: Dang_ky_hoc_phan
+      examples: |
+          - Em muốn đăng ký học phần thì làm như thế nào ạ?
+          - Điều kiện đăng ký học phần tối thiểu như nào
+          - Đăng ký học phần thì số tín chỉ giới hạn không?
+          - Học lực yếu thì được đăng ký tối đa bao nhiêu tín?
+          - Ở học kỳ phụ có bị giới hạn số tín chỉ đăng ký không?
+          - Đăng ký tín chỉ
+          - tín chỉ tối thiểu khi đăng ký
+          - Giới hạn tín chỉ đăng ký
+          - điều kiện đăng ký tín chỉ
+          - Không đăng ký được tín Chỉ
+          - Lỗi không đăng ký học phần được
 
-- intent: Phuc_khao
-  examples: |
-    - Điểm em không như mong muốn, em muốn phúc khảo thì làm thế nào ạ
-    - Điểm mình ko như dự định ban đầu
-    - Mình nghĩ bài kiểm tra này của mình chấm chưa đúng
-    - Bài kiểm tra của mình chấm có thể bị thiếu
-    - Mình bị chấm thiếu nhiều điểm thì sao giờ
-    - Cho t hỏi thủ tục phúc khảo như thế nào?
-    - Mình muốn thầy cô chấm lại bài của mình thì như thế nào
-    - Mình cần chấm lại bài của mình
-    - Bài thi cuối kì thấp quá b ơi, mình không ngờ lại thấp như thế 😥😥
-    - Mình ko thể tin dc bài thi lại quá thấp, mình muốn kiểm tra lại thì sao
-    - Thầy cô có lẽ chấm sai cho mình, mình cần hỏi thủ tục phúc khảo
-    - Không thể tin điểm mình quá thấp so với dự định !
-    - Phúc khảo ở đâu b ?
-    - Phúc khảo sao b êy
-    - Cho t hỏi phúc khảo ra sao
-    - Cái giá phải trả khi phúc khảo là j b
-    - Mình xin lệ phí phúc khảo cái
-    - Lệ phí phúc khảo
-    - Mình lo lắng quá, k biết nên phúc khảo k
-    - Có nên phúc khảo k b 
-    - Điểm chát quá chán, xin hướng dẫn phúc khảo
-    - Chán thầy cô thật, chỉ phúc khảo đê
-    - Hướng dẫn phúc khảo
+    - intent: Bao_luu_ket_qua
+      examples: |
+          - Anh chị ơi, cho em hỏi, bảo lưu em phải làm những gì?
+          - Em muốn bảo lưu
+          - Bảo lưu kết quả thì làm ntn?
+          - Mình muốn dừng học thì sao
+          - Mình muốn bảo lưu để năm sau quay lại học có được không
+          - Mình muốn lưu lại kết quả để khi nào đó học tiếp
+          - Có được dừng học, lưu lại kết quả không?
+          - Có chính sách bảo lưu ko
+          - Mình muốn tạm thời dừng học thì sao
+          - Trì hoãn việc học tạm thời làm như thế nào?
+          - Em không muốn học năm nay nhưng năm sau vẫn muốn học thì sao
+          - Mình không muốn học năm nay, để khi khác mới học
+          - Mình muốn tạm thời dừng việc học thì sao
+          - E muốn tạm dừng học để trải nghiệm bên ngoài thì e cần làm những gì
+          - Em cảm thấy không phù hợp ngành này, nhưng vẫn muốn học sau này
+          - M cảm thấy chán nản trong việc học, muốn trải nghiệm bên ngoài, nhưng vẫn muốn học để sau này có bằng
+          - Hoàn cảnh nhà mình buộc mình không thể học tiếp năm nay
+          - Năm nay mình không thể tiếp tục học
+          - Mình muốn lưu giữ kết quả thì sao
 
-- intent: Mat_the_SV
-  examples: |
-    - Mất thẻ sinh viên
-    - Mình mất thẻ sinh viên rồi thì làm sao đây
-    - Anh chị ơi, em bị mất thẻ sinh viên thì phải làm thế nào
-    - Mình muốn làm lại thẻ sinh viên
-    - Thẻ sinh viên mất rồi thì có sao không?
-    - Chán thật, mất xừ thẻ sinh viên, có cách nào cấp lại k b
-    - Lô, cần lấy lại thẻ sinh viên
-    - Mình cần cấp lại thẻ sinh viên
-    - Thẻ định danh của mình bị thất lạc, có cách nào lấy lại k
-    - Thẻ sinh viên mất tiu òi huhu 😥
-    - Tớ mất thẻ SV r
-    - Thẻ SV thất lạc r, giờ sao b
-    - Tôi mất thẻ SV, cần cấp lại b êy
-    - Bạn cho mình hỏi, giờ muốn lấy thẻ SV thì lấy đâu b
-    - Mình chưa có thẻ SV
+    - intent: Rut_hoc_ba
+      examples: |
+          - Mình muốn chuyển trường thì làm sao
+          - E không muốn học tại đây nữa
+          - E muốn rút học bạ để chuyển trường
+          - Mik muốn rút học bạ để nghỉ do hoàn cảnh
+          - Rút học bạ thì liên hệ với ai
+          - Mình muốn lấy lại học bạ vì lí do cá nhân
+          - Tôi muốn xin học bạ về cho con tôi
+          - Tôi không muốn học trường này nữa, tôi cần học bạ của tôi
+          - Học bạ thì xin rút lại ở đâu
+          - Mình xin thủ tục rút lại học bạ
+          - Có được rút lại học bạ không?
+          - Em muốn xin lại hồ sơ của mình thì làm như nào ạ
+          - Mình cần lấy lại hồ sơ sinh viên để chuyển trường
+          - Vì lí do khác nên mình cần hồ sơ sinh viên
+          - Mình cần rút hồ sơ của mình thì làm ở đâu
+          - Lấy lại hồ sơ sinh viên
+          - Mình muốn chuyển trường nên cần hồ sơ ngay bây giờ thì sao
+          - E muốn đổi ngành khác nên cần học bạ thì làm thủ tục sao
 
-- intent: Giang_vien
-  examples: |
-    - cho mình xin thông tin của thầy [Phan Thanh Đức](giang vien) ạ!
-    - cho mình xin thông tin của thầy [Nguyễn Thanh Thụy](giang vien) ạ!
-    - thông tin của cô [Giang Thị Thu Huyền](giang vien) ad có cho em xin với.
-    - thông tin của cô [Trần Thị Huế](giang vien) ad có cho em xin với.
-    - thông tin của cô [Lê Cẩm Tú](giang vien) ad có cho em xin với
-    - Thông tin thầy [Chu Văn Huy](giang vien) ad có không vậy!
-    - Thông tin thầy [Lê Văn Hùng](giang vien) ad có không vậy!
-    - Thông tin thầy [Lê Quý Tài](giang vien) ad có không vậy!
-    - cho mình xin thông tin của thầy [Vũ Trọng Sinh](giang vien) ạ!
-    - cho mình xin thông tin của thầy [Vũ Duy Hiến](giang vien) ạ!
-    - Em muốn xin thông tin liên lạc của cô [Chu Thị Hồng Hải](giang vien) ạ!
-    - Cách thức để liên lạc với cô [Nguyễn Thị Thùy Anh](giang vien) ad cho mình xin với!
-    - thầy [Đinh Trọng Hiếu](giang vien) thông tin là gì ad ơi
-    - Thông tin của cô [An Phương Điệp](giang vien) ad có không vậy!
-    - Làm sao để có số điện thoại hay là email của cô [Triệu Thu Hương](giang vien) ạ. Ad có cho em xin luôn với
-    - Thông tin về chức vụ của cô [Ngô Thùy Linh](giang vien) là gì ạ
-    - cho mình xin thông tin của thầy [Mai Tấn Tài](giang vien) ạ!
-    - Mình muốn biết cách thức liên lạc với cô [Nguyễn Thị Thu Trang](giang vien) ạ
-    - cô [Nguyễn Thị Yến](giang vien) ad có thông tin cho mình xin với
-- lookup: giang vien
-  examples: |
-    - Đức
-    - đức
-    - Phan Thanh Đức
-    - thầy Phan Thanh Đức
-    - thầy Chu Văn Huy
-    - Chu Văn Huy
-    - thầy huy
-    - Nguyễn Thanh Thụy
-    - thầy thụy
-    - Giang Thị Thu Huyền
-    - cô Huyền
-    - Lê Văn Hùng
-    - thầy hùng
-    - Trần Thị Huế
-    - cô huế
-    - Lê Quý Tài
-    - thầy tài
-    - Nguyễn Phan Tình
-    - Lê Cẩm Tú
-    - Bùi Thị Hồng Nhung
-    - Nguyễn Dương Hùng
-    - Lê Thị Hồng Nhung
-    - Chu Thị Hồng Hải
-    - Nguyễn Thị Thùy Anh
-    - An Phương Điệp
-    - Vũ Duy Hiến
-    - Đinh Trọng Hiếu
-    - Triệu Thu Hương
-    - Ngô Thùy Linh
-    - Mai Tấn Tài
-    - Nguyễn Thị Thu Trang
-    - Vũ Trọng Sinh
-    - thầy Sinh 
-    - Nguyễn Thị Yến
-    - cô Yến
+    - intent: Phuc_khao
+      examples: |
+          - Điểm em không như mong muốn, em muốn phúc khảo thì làm thế nào ạ
+          - Điểm mình ko như dự định ban đầu
+          - Mình nghĩ bài kiểm tra này của mình chấm chưa đúng
+          - Bài kiểm tra của mình chấm có thể bị thiếu
+          - Mình bị chấm thiếu nhiều điểm thì sao giờ
+          - Cho t hỏi thủ tục phúc khảo như thế nào?
+          - Mình muốn thầy cô chấm lại bài của mình thì như thế nào
+          - Mình cần chấm lại bài của mình
+          - Bài thi cuối kì thấp quá b ơi, mình không ngờ lại thấp như thế 😥😥
+          - Mình ko thể tin dc bài thi lại quá thấp, mình muốn kiểm tra lại thì sao
+          - Thầy cô có lẽ chấm sai cho mình, mình cần hỏi thủ tục phúc khảo
+          - Không thể tin điểm mình quá thấp so với dự định !
+          - Phúc khảo ở đâu b ?
+          - Phúc khảo sao b êy
+          - Cho t hỏi phúc khảo ra sao
+          - Cái giá phải trả khi phúc khảo là j b
+          - Mình xin lệ phí phúc khảo cái
+          - Lệ phí phúc khảo
+          - Mình lo lắng quá, k biết nên phúc khảo k
+          - Có nên phúc khảo k b 
+          - Điểm chát quá chán, xin hướng dẫn phúc khảo
+          - Chán thầy cô thật, chỉ phúc khảo đê
+          - Hướng dẫn phúc khảo
 
+    - intent: Mat_the_SV
+      examples: |
+          - Mất thẻ sinh viên
+          - Mình mất thẻ sinh viên rồi thì làm sao đây
+          - Anh chị ơi, em bị mất thẻ sinh viên thì phải làm thế nào
+          - Mình muốn làm lại thẻ sinh viên
+          - Thẻ sinh viên mất rồi thì có sao không?
+          - Chán thật, mất xừ thẻ sinh viên, có cách nào cấp lại k b
+          - Lô, cần lấy lại thẻ sinh viên
+          - Mình cần cấp lại thẻ sinh viên
+          - Thẻ định danh của mình bị thất lạc, có cách nào lấy lại k
+          - Thẻ sinh viên mất tiu òi huhu 😥
+          - Tớ mất thẻ SV r
+          - Thẻ SV thất lạc r, giờ sao b
+          - Tôi mất thẻ SV, cần cấp lại b êy
+          - Bạn cho mình hỏi, giờ muốn lấy thẻ SV thì lấy đâu b
+          - Mình chưa có thẻ SV
 
-
+    - intent: Giang_vien
+      examples: |
+          - cho mình xin thông tin của thầy [Phan Thanh Đức](giang vien) ạ!
+          - cho mình xin thông tin của thầy [Nguyễn Thanh Thụy](giang vien) ạ!
+          - thông tin của cô [Giang Thị Thu Huyền](giang vien) ad có cho em xin với.
+          - thông tin của cô [Trần Thị Huế](giang vien) ad có cho em xin với.
+          - thông tin của cô [Lê Cẩm Tú](giang vien) ad có cho em xin với
+          - Thông tin thầy [Chu Văn Huy](giang vien) ad có không vậy!
+          - Thông tin thầy [Lê Văn Hùng](giang vien) ad có không vậy!
+          - Thông tin thầy [Lê Quý Tài](giang vien) ad có không vậy!
+          - cho mình xin thông tin của thầy [Vũ Trọng Sinh](giang vien) ạ!
+          - cho mình xin thông tin của thầy [Vũ Duy Hiến](giang vien) ạ!
+          - Em muốn xin thông tin liên lạc của cô [Chu Thị Hồng Hải](giang vien) ạ!
+          - Cách thức để liên lạc với cô [Nguyễn Thị Thùy Anh](giang vien) ad cho mình xin với!
+          - thầy [Đinh Trọng Hiếu](giang vien) thông tin là gì ad ơi
+          - Thông tin của cô [An Phương Điệp](giang vien) ad có không vậy!
+          - Làm sao để có số điện thoại hay là email của cô [Triệu Thu Hương](giang vien) ạ. Ad có cho em xin luôn với
+          - Thông tin về chức vụ của cô [Ngô Thùy Linh](giang vien) là gì ạ
+          - cho mình xin thông tin của thầy [Mai Tấn Tài](giang vien) ạ!
+          - Mình muốn biết cách thức liên lạc với cô [Nguyễn Thị Thu Trang](giang vien) ạ
+          - cô [Nguyễn Thị Yến](giang vien) ad có thông tin cho mình xin với
+    - lookup: giang vien
+      examples: |
+          - Đức
+          - đức
+          - Phan Thanh Đức
+          - thầy Phan Thanh Đức
+          - thầy Chu Văn Huy
+          - Chu Văn Huy
+          - thầy huy
+          - Nguyễn Thanh Thụy
+          - thầy thụy
+          - Giang Thị Thu Huyền
+          - cô Huyền
+          - Lê Văn Hùng
+          - thầy hùng
+          - Trần Thị Huế
+          - cô huế
+          - Lê Quý Tài
+          - thầy tài
+          - Nguyễn Phan Tình
+          - Lê Cẩm Tú
+          - Bùi Thị Hồng Nhung
+          - Nguyễn Dương Hùng
+          - Lê Thị Hồng Nhung
+          - Chu Thị Hồng Hải
+          - Nguyễn Thị Thùy Anh
+          - An Phương Điệp
+          - Vũ Duy Hiến
+          - Đinh Trọng Hiếu
+          - Triệu Thu Hương
+          - Ngô Thùy Linh
+          - Mai Tấn Tài
+          - Nguyễn Thị Thu Trang
+          - Vũ Trọng Sinh
+          - thầy Sinh 
+          - Nguyễn Thị Yến
+          - cô Yến

@@ -27,6 +27,7 @@ intents:
   - Phuc_khao
   - Mat_the_SV
   - Giang_vien
+  - Dang_ky_hoc_phan
 
 entities:
   - giang vien
@@ -168,6 +169,13 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   utter_Mat_the_SV:
   - text: Em mang 3 ảnh 3x4 kèm theo chứng minh thư và 20k lệ phí lên phòng QLNH 101 để làm lại thẻ nhé. 
 
+  utter_Dang_ky_hoc_phan:
+  - text: "Khối lượng học tập tối thiểu mà mỗi sinh viên phải đăng ký trong mỗi học kỳ được quy định như sau: 
+  \n14 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên được xếp hạng học lực bình thường.
+  \n10 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên trong thời gian bị xếp hạng học lực yếu.
+  \nHVNH không quy định khối lượng học tập tối thiểu đối với những sinh viên ở học kỳ phụ
+  \nSinh viên trong thời gian bị xếp hạng học lực yếu chỉ được đăng ký khối lượng học tập không quá 14 tín chỉ cho mỗi học kỳ. Không hạn chế khối lượng đăng ký học tập của những sinh viên xếp hạng học lực bình thường."
+
   # utter_default:
   # - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
 
@@ -196,6 +204,7 @@ actions:
 - utter_Phuc_khao
 - utter_Mat_the_SV
 - action_custom_Giang_vien
+- utter_Dang_ky_hoc_phan
 # - utter_default
 # - utter_please_rephrase
 # - action_name

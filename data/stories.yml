@@ -1,90 +1,94 @@
 version: "2.0"
 
 stories:
+    - story: greet_name
+      steps:
+          - intent: greet
+          # - action: action_name
+          - action: utter_greet
 
-- story: greet_name
-  steps:
-  - intent: greet
-  # - action: action_name
-  - action: utter_greet
+    - story: Hỏi chương trình đào tạo
+      steps:
+          - intent: Chuong_trinh_dao_tao
+          - action: utter_Chuong_trinh_dao_tao
 
-- story: Hỏi chương trình đào tạo
-  steps:
-  - intent: Chuong_trinh_dao_tao
-  - action: utter_Chuong_trinh_dao_tao
+    - story: Hỏi tuyển sinh
+      steps:
+          - intent: Tuyen_sinh
+          - action: utter_Tuyen_sinh
 
-- story: Hỏi tuyển sinh
-  steps:
-  - intent: Tuyen_sinh
-  - action: utter_Tuyen_sinh
+    - story: Hỏi học phí
+      steps:
+          - intent: Hoc_phi
+          - action: utter_Hoc_phi
 
-- story: Hỏi học phí
-  steps:
-  - intent: Hoc_phi
-  - action: utter_Hoc_phi
+    - story: Hỏi nghề nghiệp
+      steps:
+          - intent: Nghe_nghiep
+          - action: utter_Nghe_nghiep
 
-- story: Hỏi nghề nghiệp
-  steps:
-  - intent: Nghe_nghiep
-  - action: utter_Nghe_nghiep
+    - story: Lời cảm ơn
+      steps:
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
 
-- story: Lời cảm ơn
-  steps:
-  - intent: Loi_cam_on
-  - action: utter_Loi_cam_on
-  - action: utter_goodbye
+    - story: Hỏi điểm
+      steps:
+          - intent: Diem
+          - action: utter_Diem
 
-- story: Hỏi điểm
-  steps:
-  - intent: Diem
-  - action: utter_Diem
+    - story: Mất mật khẩu
+      steps:
+          - intent: Mat_mat_khau
+          - action: utter_Mat_mat_khau
 
-- story: Mất mật khẩu
-  steps:
-  - intent: Mat_mat_khau
-  - action: utter_Mat_mat_khau
+    - story: Thời hạn đóng học phí
+      steps:
+          - intent: Thoi_han_hoc_phi
+          - action: utter_Thoi_han_hoc_phi
 
-- story: Thời hạn đóng học phí
-  steps:
-  - intent: Thoi_han_hoc_phi
-  - action: utter_Thoi_han_hoc_phi
-  
-- story: Học bổng
-  steps:
-  - intent: Hoc_bong
-  - action: utter_Hoc_bong
+    - story: Học bổng
+      steps:
+          - intent: Hoc_bong
+          - action: utter_Hoc_bong
 
-- story: Cảnh cáo học vụ
-  steps:
-  - intent: Canh_cao
-  - action: utter_Canh_cao
-  
-- story: Hoãn thi
-  steps:
-  - intent: Hoan_thi
-  - action: utter_Hoan_thi
+    - story: Cảnh cáo học vụ
+      steps:
+          - intent: Canh_cao
+          - action: utter_Canh_cao
 
-- story: Hủy học phần
-  steps:
-  - intent: Huy_hoc_phan
-  - action: utter_Huy_hoc_phan
+    - story: Hoãn thi
+      steps:
+          - intent: Hoan_thi
+          - action: utter_Hoan_thi
 
-- story: Bảo lưu
-  steps:
-  - intent: Bao_luu_ket_qua
-  - action: utter_Bao_luu_ket_qua
+    - story: Hủy học phần
+      steps:
+          - intent: Huy_hoc_phan
+          - action: utter_Huy_hoc_phan
 
-- story: Rút học bạ - Chuyển trường
-  steps:
-  - intent: Rut_hoc_ba
-  - action: utter_Rut_hoc_ba
+    - story: Bảo lưu
+      steps:
+          - intent: Bao_luu_ket_qua
+          - action: utter_Bao_luu_ket_qua
 
-- story: Phúc khảo
-  steps:
-  - intent: Phuc_khao
-  - action: utter_Phuc_khao
+    - story: Rút học bạ - Chuyển trường
+      steps:
+          - intent: Rut_hoc_ba
+          - action: utter_Rut_hoc_ba
 
-- story: Mất thẻ SV
-  steps:
-  - intent: Mat_the_SV
-  - action: utter_Mat_the_SV
+    - story: Phúc khảo
+      steps:
+          - intent: Phuc_khao
+          - action: utter_Phuc_khao
+
+    - story: Mất thẻ SV
+      steps:
+          - intent: Mat_the_SV
+          - action: utter_Mat_the_SV
+
+    - story: Đăng ký học phần
+      steps:
+          - intent: Dang_ky_hoc_phan
+          - action: utter_Dang_ky_hoc_phan
