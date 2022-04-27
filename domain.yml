@@ -28,6 +28,10 @@ intents:
   - Mat_the_SV
   - Giang_vien
   - Dang_ky_hoc_phan
+  - Tinh_diem
+  - diem_tich_luy
+  - diem_cai_thien
+  - diem_tb
 
 entities:
   - giang vien
@@ -176,6 +180,15 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   \nHVNH không quy định khối lượng học tập tối thiểu đối với những sinh viên ở học kỳ phụ
   \nSinh viên trong thời gian bị xếp hạng học lực yếu chỉ được đăng ký khối lượng học tập không quá 14 tín chỉ cho mỗi học kỳ. Không hạn chế khối lượng đăng ký học tập của những sinh viên xếp hạng học lực bình thường."
 
+  utter_Tinh_diem:
+  - text: "Chào bạn, cách tính điểm bài kiểm tra trên lớp thế này bạn nhé: Chuyên cần 10%. 2 bài kiểm tra trên lớp 30%. Cuối kỳ 60%. Có thể có một số môn như năng lực số sẽ có cách tính điểm là cc:10% kt1:25%, kt2:15%, thi 50% nhé. Để rõ hơn bạn xem trên cổng thông tin nha"
+  utter_diem_tich_luy:
+  - text: "Đối với hệ 4, bạn lấy điểm quy đổi từng môn nhân số tín môn đó rồi cộng lại, cuối cùng chia cho tổng số tín chỉ. Đối với hệ 10, bạn lấy điểm từng môn nhân số tín rồi cộng lại, cuối cùng chia cho tổng số tín."
+  utter_diem_cai_thien:
+  - text: "Trên bảng điểm cuối năm chỉ ghi điểm bạn đã cải thiện thôi nhé."
+  utter_diem_tb:
+  - text: "Điểm tích lũy chỉ làm tròn đến 2 chữ số thập phân bạn nhé. "
+
   # utter_default:
   # - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
 
@@ -204,6 +217,10 @@ actions:
 - utter_Phuc_khao
 - utter_Mat_the_SV
 - action_custom_Giang_vien
+- utter_Tinh_diem
+- utter_diem_tich_luy
+- utter_diem_cai_thien
+- utter_diem_tb
 # - utter_default
 # - utter_please_rephrase
 # - action_name

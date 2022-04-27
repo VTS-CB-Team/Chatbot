@@ -92,3 +92,23 @@ stories:
       steps:
           - intent: Dang_ky_hoc_phan
           - action: utter_Dang_ky_hoc_phan
+
+    - story: Tinh_diem
+      steps:
+      - intent: Tinh_diem
+      - action: utter_Tinh_diem
+
+    - story: diem_tich_luy
+      steps:
+      - intent: diem_tich_luy
+      - action: utter_diem_tich_luy
+
+    - story: diem_cai_thien
+      steps:
+      - intent: diem_cai_thien
+      - action: utter_diem_cai_thien
+
+    - story: diem_tb
+      steps:
+      - intent: diem_tb
+      - action: utter_diem_tb

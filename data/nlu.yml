@@ -401,3 +401,42 @@ nlu:
           - thầy Sinh 
           - Nguyễn Thị Yến
           - cô Yến
+
+    - intent: Tinh_diem
+      examples: |
+          - cho em hỏi các tính % bài kiểm tra với ạ?
+          - cách tính điểm các bài kiểm tra như nào ạ?
+          - tinh diem cac bai kiem tra nhu nao?
+          - bai kiem tra tinh diem nhu nao
+          - cách tính điểm các bài kt?
+          - bai kt tinh diem theo % nhu nao?
+          - bài kiểm tra tính điểm theo % như nào?
+          - tính điểm bài ktra 1, 2 và thi như nào ạ?
+          - phần trăm chuyên cần bài kt1, kt2 và thi được tính như nào?
+          - tính điểm cc, kt1, kt2, thi như nào?
+    - intent: diem_tich_luy
+      examples: |
+          - Anh, chị cho em hỏi cách tính điểm tích lũy với ạ?
+          - Tinh diem tich luy nhu the nao a
+          - Em thấy ctt có ghi điểm tích lũy, thì điểm tích lũy đó tính như nào ạ?
+          - Diem tich luy duoc tinh nhu nao 
+          - Điểm tích lũy được tính như nào
+          - Diem tich luy tinh ra sao?
+
+    - intent: diem_cai_thien
+      examples: |
+          - Cho mình hỏi có điểm mới của môn cải thiện mà cao hơn so với điểm cũ thì điểm cũ có bị xóa đi ko, lúc in bảng điểm năm cuối thì sao?
+          - Điểm môn cải thiện đã có nhưng chưa cập nhật trên ctt thì có sao k ạ?
+          - Sau khi cải cải thiện điểm thấp hơn thì sao ạ?
+          - Diem cai thien bao gio moi duoc cap nhat a
+          - Điểm cải thiện thấp hơn ban đầu thì lấy điểm nảo ạ?
+
+    - intent: diem_tb
+      examples: |
+          - Bạn cho tớ hỏi nếu điểm trung bình cả 4 năm học của t là 3.58 thì có được làm tròn lên không hay vẫn giữ nguyên?
+          - Dtb làm tròn đến mấy ạ?
+          - Điểm trung bình làm tròn như nào 
+          - Điểm tb có được làm tròn lên k?
+          - Làm tròn đtb nhu nao?
+
+
