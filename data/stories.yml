@@ -112,3 +112,20 @@ stories:
       steps:
       - intent: diem_tb
       - action: utter_diem_tb
+
+    - story: dang_ky_nhap_hoc
+      steps:
+      - intent: dang_ky_nhap_hoc
+      - action: utter_dang_ky_nhap_hoc
+
+    - story: dk_klht
+      steps:
+      - intent: dk_klht
+      - action: utter_dk_klht
+
+    - story: chuyen_truong
+      steps:
+      - intent: chuyen_truong
+      - action: utter_chuyen_truong
+
+    

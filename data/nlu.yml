@@ -438,5 +438,45 @@ nlu:
           - Điểm trung bình làm tròn như nào 
           - Điểm tb có được làm tròn lên k?
           - Làm tròn đtb nhu nao?
+    
+    - intent: dang_ky_nhap_hoc
+      examples: |
+          - Thủ tục đăng ký nhập học như nào?
+          - Đăng ký nhập học thế nào?
+          - Đăng ký nhập học
+          - Thủ tục nhập học
+          - Đk nhập học
+          - Đknh
+          - Nhập học
+          - Nhập học cần giấy tờ gì?
+          - Để nhập học cần làm gì?
+          - Nhap hoc
+          - Dang ky nhap hoc
+
+    - intent: dk_klht
+      examples: |
+          - Đăng ký học như thế nào?
+          - Đăng ký học
+          - Đăng ký khối lượng học tập là gì?
+          - Đăng ký khối lượng học tập
+          - Đk học
+          - ĐK học phần
+          - Đăng ký học phần
+          - Đkhp
+          - Đkklht   
+          - Dang ky khoi luong hoc tap
+          - Dang ky hoc
+
+    - intent: chuyen_truong
+      examples: |
+          - Thủ tục chuyển trường
+          - Chuyển trường
+          - Để chuyển trường cần làm gì?
+          - Điều kiện chuyển trường
+          - Xét chuyển trường
+          - Muốn chuyển trường
+          - Chuyen truong
+
+
 
 
