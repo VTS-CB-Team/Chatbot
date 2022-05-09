@@ -35,9 +35,11 @@ intents:
   - dang_ky_nhap_hoc
   - dk_klht
   - chuyen_truong
+  - Thong_tin_lien_lac
 
 entities:
   - giang vien
+  - thong_tin
  
 
 # slots:
@@ -265,7 +267,7 @@ actions:
 - utter_dang_ky_nhap_hoc
 - utter_dk_klht
 - utter_chuyen_truong
-
+- action_custom_thong_tin
 # - utter_default
 # - utter_please_rephrase
 # - action_name

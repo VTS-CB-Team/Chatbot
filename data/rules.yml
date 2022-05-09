@@ -21,6 +21,11 @@ rules:
   steps:
   - intent: Giang_vien
   - action: action_custom_Giang_vien
+  
+- rule: Hỏi thông tin liên lạc
+  steps:
+  - intent: Thong_tin_lien_lac
+  - action: action_custom_thong_tin
 # - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
 #   steps:
 #   - intent: nlu_fallback
