@@ -32,21 +32,18 @@ intents:
   - diem_tich_luy
   - diem_cai_thien
   - diem_tb
+  - start
+  - stop
+  - tot_nghiep
+  - CLB
+  - don_vi_hop_tac
 
 entities:
   - giang vien
  
-
-# slots:
-#   name:
-#     type: text
-#   surname:
-#     type: text
-  
     
 responses:
   utter_greet:
-  - text: "Hi! Bạn có thể cho mình biết tên của bạn được không?"
   - text: "Hi! Mình có thể giúp gì được cho bạn?"
 
   utter_cheer_up:
@@ -189,8 +186,62 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   utter_diem_tb:
   - text: "Điểm tích lũy chỉ làm tròn đến 2 chữ số thập phân bạn nhé. "
 
-  # utter_default:
-  # - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
+  utter_tot_nghiep:
+  - text: "1. Đầu học kỳ cuối khoá, các sinh viên được đăng ký làm đồ án, khóa luận tốt nghiệp hoặc học thêm một số học phần chuyên môn được quy định như sau:
+a. Làm đồ án, khóa luận tốt nghiệp: áp dụng cho sinh viên đạt mức quy định của HVNH. Đồ án, khóa luận tốt nghiệp là học phần có khối lượng không quá 14 tín chỉ cho trình độ đại học và 5 tín chỉ cho trình độ cao đẳng. Giám đốc HVNH quy định khối lượng cụ thể phù hợp với yêu cầu đào tạo trong chương trình đào tạo.
+b. Học và thi một số học phần chuyên môn: sinh viên không được giao làm đồ án, khóa luận tốt nghiệp phải đăng ký học thêm các học phần chuyên môn và hoàn thành báo cáo thực tập được quy định trong chương trình đào tạo.
+\n2. Giám đốc HVNH quy định:
+a. Các điều kiện để sinh viên được đăng ký làm đồ án hoặc khóa luận tốt nghiệp:
+- Tích lũy đủ số học phần quy định cho chương trình đào tạo của mỗi chuyên ngành cho đến thời điểm xét;
+- Điểm trung bình chung tích luỹ toàn khoá đạt từ 3.0 trở lên;
+- Điểm khuyến khích từ thành tích nghiên cứu khoa học của sinh viên theo quy định của Giám đốc HVNH;
+- Tỉ lệ sinh viên viết khoá luận, đồ án nghiệp tối đa 10% so với tổng số sinh viên của từng ngành đào tạo.
+b. Hình thức và thời gian làm đồ án, khóa luận tốt nghiệp quy định trong chương trình đào tạo và thực hiện theo kế hoạch đào tạo hàng năm do Phòng Đào tạo công bố;
+c. Hình thức chấm đồ án, khóa luận tốt nghiệp được quy định tại Điều 25;
+d. Các khoa bố trí giảng viên phù hợp để hướng dẫn đối với sinh viên trong thời
+gian làm đồ án, khóa luận tốt nghiệp.
+\n3. Đối với một số ngành đào tạo đòi hỏi phải dành nhiều thời gian cho thí nghiệm hoặc khảo sát để sinh viên hoàn thành đồ án, khóa luận tốt nghiệp được Giám đốc HVNH phê duyệt trong chương trình đào tạo, Phòng Đào tạo có thể bố trí thời gian làm đồ án, khóa luận tốt nghiệp kết hợp với thời gian thực tập chuyên môn cuối khoá."
+
+- utter_CLB:
+  - text: "(1) Đội Công tác viên Hội sinh viên (Blue wings)
+\n(2) Đội Sinh viên tình nguyện (BAVT)
+\n(3) Câu lạc bộ Nhà Ngân hàng tương lai (TBC)
+\n(4) Câu lạc bộ Guitar (GBA)
+\n(5) Câu lạc bộ Chứng khoán (SEC)
+\n(6) Câu lạc bộ Kỹ năng kinh doanh (BSC)
+\n(7) Đội Sinh viên tình nguyện vận động hiến máu (BBC)
+\n(8) Câu lạc bộ Tin học Ngân hàng (BIT)
+\n(9) Câu lạc bộ CEO trẻ (YCC)
+\n(10) Câu lạc bộ Nghiên cứu khoa học (SRC)
+\n(11) Câu lạc bộ Đầu tư (BIC)
+\n(12) Câu lạc bộ Tiếng Anh (EC)
+\n(13) Câu lạc bộ Người dẫn chương trình (MCC)
+\n(14) Câu lạc bộ Nguồn nhân lực ngân hàng (UBC)
+\n(15) Câu lạc bộ Kế toán – Kiểm toán (AAC)
+\n(16) Câu lạc bộ Marketing Plus (MPC)
+\n(17) Đội Văn nghệ (BAAT)
+\n(18)Câu Lạc bộ Taekwondo – TAEKWONDO
+\n(19) Câu lạc bộ karatedo HVNH – BKC
+\n(20) Câu lạc bộ bóng đá HVNH – BAFT
+\n(21) Câu lạc bộ Dự án sinh viên - Enactus
+\n(22) Câu lạc bộ Sinh viên Ngân hàng Forum – SVNHFORUM
+\n(23) Câu lạc bộ Kỹ năng giao tiếp và thuyết trình – SCBA
+\n(24) Câu lạc bộ Tài chính – FC
+\n(25) Câu lạc bộ Sinh viên tài năng – GSC
+\n(26) Câu lạc bộ Kinh doanh quốc tế - IBC"
+
+- utter_don_vi_doi_tac:
+  - text: "1. Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - BIDV
+\n2. Ngân hàng Nông nghiệp và phát triển nông thôn Việt Nam – Agribank
+\n3. Ngân hàng TMCP Ngoại thương Việt Nam – Vietcombank
+\n4. Ngân hàng TMCP Công thương Việt Nam – Vietinbank
+\n5. Ngân hàng TMCP Quân đội – MB Bank
+\n6. Ngân hàng TMCP Kỹ Thương Việt Nam – Techcombank
+\n7. Hội các Nhà quản trị Doanh nghiệp Việt Nam
+\n8. Hiệp hội Kế toán công chứng Anh Quốc – ACCA
+\n9. Ngân hàng TMCP Sài Gòn – Hà Nội
+\n10. Ngân hàng TMCP Việt Nam Thịnh Vượng – VPbank"
+
 
 actions:
 - utter_greet
@@ -221,11 +272,9 @@ actions:
 - utter_diem_tich_luy
 - utter_diem_cai_thien
 - utter_diem_tb
-# - utter_default
-# - utter_please_rephrase
-# - action_name
-# - action_service
-
+- utter_tot_nghiep
+- utter_CLB
+- utter_don_vi_doi_tac
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
