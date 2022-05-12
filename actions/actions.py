@@ -4,6 +4,8 @@
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/custom-actions
 
+# This is a simple example for a custom action which utters "Hello World!"
+
 import sqlite3
 from typing import Any, Text, Dict, List
 
@@ -12,9 +14,8 @@ from rasa_sdk.events import UserUtteranceReverted
 from rasa_sdk.executor import CollectingDispatcher
 
 sqliteConnection = sqlite3.connect(R'C:\Users\lehoangvu24\Desktop\Rasa\Chatbot\GV_HTTTQL.db')
-
 cursor = sqliteConnection.cursor()
-# print("Kết nối thành công")
+print("Kết nối thành công")
 
 # Truy vấn sqlite lấy thông tin giảng viên
 class ActionAskKnowledgeBaseLoaiSanPham(Action):
@@ -30,28 +31,21 @@ class ActionAskKnowledgeBaseLoaiSanPham(Action):
 		# thong_tin_ep = str(thong_tin)
 		# des_tt = tracker.get_latest_entity_values("giang vien")
 
-        sqlite_select_Query = f'''SELECT * from GVs where Hoten like "%{thong_tin}%"'''
+        sqlite_select_Query = f'''SELECT * from GV where Hoten like "%{thong_tin}%"'''
         
         cursor.execute(sqlite_select_Query)
         record = cursor.fetchall()
-        check = False
-        print(text_input)
-        result = record[-1]
-        Hoten = result[0]
-        Email = result[1]
-        Chucvu = result[2]
-        SĐt = result[3]
-        # for result in record:
-        #     Hoten = result[0]
-        #     Email = result[1]
-        #     Chucvu = result[2]
-        #     SĐt = result[3]
-        #     if thongtin in text_input:
-        #         check = True
-        #         dispatcher.utter_message("")       
-        # if not check:
-        #     dispatcher.utter_message("")
-        dispatcher.utter_message(f"Đây là thông tin bạn cần về giảng viên {thong_tin} ha: {Hoten}, {Email}, {Chucvu}, {SĐt}")
+        # check = False
+        # print(text_input)
+        s = "0"
+        for result in record:
+
+            Hoten = result[0]
+            Email = result[1]
+            Chucvu = result[2]
+            SĐt = s + str(result[3])
+    
+        dispatcher.utter_message(f"Đây là thông tin bạn cần về giảng viên {Hoten} nhé: \n Email: {Email} \n Chức vụ: {Chucvu} \n Số điện thoại: {SĐt}")
         return []
 
 class ActionAskKnowledgeBaseThongtin(Action):
