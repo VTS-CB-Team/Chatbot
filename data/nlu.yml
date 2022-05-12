@@ -449,8 +449,27 @@ nlu:
 
     - intent: tot_nghiep
       examples: |
-          - Thực tập cuối khóa thì thủ tục như nào ạ
+          - Thực tập cuối khóa thì quy định như nào ạ
           - Làm đồ án tốt nghiệp
           - làm khóa luận tốt nghiệp
-          - Điểm tb có được làm tròn lên k?
-          - Làm tròn đtb nhu nao?
+          - Điều kiện để làm đồ án hoặc khóa luận tốt nghiệp
+          - Hình thức và thời gian làm đồ án, khóa luận tốt nghiệp
+          - Tỉ lệ sinh viên viết khóa luận, đồ án tốt nghiệp là bao nhiêu ạ?
+          - Làm đồ án tốt nghiệp có cần phải học thêm môn nào khác không ạ?
+
+    - intent: CLB
+      examples: |
+          - Cho e xin thông tin các câu lạc bộ của trường
+          - CLB trực thuộc Đoàn thanh niên - Hội sinh viên
+          - Trường mình có bao nhiêu câu lạc bộ ạ?
+          - E có thể tham gia các câu lạc bộ nào tại trường ạ?
+          - Trường có nhiều CLB không ạ?
+
+    - intent: don_vi_hop_tac
+      examples: |
+          - Trường mình ký kết hợp tác với các đơn vị nào v ạ
+          - các đơn vị ký thỏa thuận hợp tác với Học viện
+          - Có ngân hàng nào ký kết thỏa thuận hợp tác với trường không?
+          - ký thỏa thuận hợp tác
+          - Có bao nhiêu đơn vị đang là đối tác của trường?
+          - đối tác của học viện
