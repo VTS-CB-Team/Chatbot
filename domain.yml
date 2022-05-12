@@ -32,18 +32,16 @@ intents:
   - diem_tich_luy
   - diem_cai_thien
   - diem_tb
-<<<<<<< HEAD
   - start
   - stop
   - tot_nghiep
   - CLB
   - don_vi_hop_tac
-=======
   - dang_ky_nhap_hoc
   - dk_klht
   - chuyen_truong
   - Thong_tin_lien_lac
->>>>>>> 0c24e6e9174601274db556237e3258f30eb7879e
+
 
 entities:
   - giang vien
@@ -248,7 +246,7 @@ d. Các khoa bố trí giảng viên phù hợp để hướng dẫn đối vớ
 gian làm đồ án, khóa luận tốt nghiệp.
 \n3. Đối với một số ngành đào tạo đòi hỏi phải dành nhiều thời gian cho thí nghiệm hoặc khảo sát để sinh viên hoàn thành đồ án, khóa luận tốt nghiệp được Giám đốc HVNH phê duyệt trong chương trình đào tạo, Phòng Đào tạo có thể bố trí thời gian làm đồ án, khóa luận tốt nghiệp kết hợp với thời gian thực tập chuyên môn cuối khoá."
 
-- utter_CLB:
+  utter_CLB:
   - text: "(1) Đội Công tác viên Hội sinh viên (Blue wings)
 \n(2) Đội Sinh viên tình nguyện (BAVT)
 \n(3) Câu lạc bộ Nhà Ngân hàng tương lai (TBC)
@@ -276,7 +274,7 @@ gian làm đồ án, khóa luận tốt nghiệp.
 \n(25) Câu lạc bộ Sinh viên tài năng – GSC
 \n(26) Câu lạc bộ Kinh doanh quốc tế - IBC"
 
-- utter_don_vi_doi_tac:
+  utter_don_vi_hop_tac:
   - text: "1. Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - BIDV
 \n2. Ngân hàng Nông nghiệp và phát triển nông thôn Việt Nam – Agribank
 \n3. Ngân hàng TMCP Ngoại thương Việt Nam – Vietcombank
@@ -318,21 +316,14 @@ actions:
 - utter_diem_tich_luy
 - utter_diem_cai_thien
 - utter_diem_tb
-<<<<<<< HEAD
 - utter_tot_nghiep
 - utter_CLB
-- utter_don_vi_doi_tac
-=======
+- utter_don_vi_hop_tac
 - utter_dang_ky_nhap_hoc
 - utter_dk_klht
 - utter_chuyen_truong
 - action_custom_thong_tin
-# - utter_default
-# - utter_please_rephrase
-# - action_name
-# - action_service
 
->>>>>>> 0c24e6e9174601274db556237e3258f30eb7879e
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
