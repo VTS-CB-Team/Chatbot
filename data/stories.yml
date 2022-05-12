@@ -116,6 +116,7 @@ stories:
 
     - story: diem_tb
       steps:
+<<<<<<< HEAD
           - intent: diem_tb
           - action: utter_diem_tb
 
@@ -133,3 +134,24 @@ stories:
       steps:
           - intent: don_vi_hop_tac
           - action: utter_don_vi_hop_tac
+=======
+      - intent: diem_tb
+      - action: utter_diem_tb
+
+    - story: dang_ky_nhap_hoc
+      steps:
+      - intent: dang_ky_nhap_hoc
+      - action: utter_dang_ky_nhap_hoc
+
+    - story: dk_klht
+      steps:
+      - intent: dk_klht
+      - action: utter_dk_klht
+
+    - story: chuyen_truong
+      steps:
+      - intent: chuyen_truong
+      - action: utter_chuyen_truong
+
+    
+>>>>>>> 0c24e6e9174601274db556237e3258f30eb7879e

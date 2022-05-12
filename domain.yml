@@ -32,14 +32,22 @@ intents:
   - diem_tich_luy
   - diem_cai_thien
   - diem_tb
+<<<<<<< HEAD
   - start
   - stop
   - tot_nghiep
   - CLB
   - don_vi_hop_tac
+=======
+  - dang_ky_nhap_hoc
+  - dk_klht
+  - chuyen_truong
+  - Thong_tin_lien_lac
+>>>>>>> 0c24e6e9174601274db556237e3258f30eb7879e
 
 entities:
   - giang vien
+  - thong_tin
  
     
 responses:
@@ -185,6 +193,44 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   - text: "Trên bảng điểm cuối năm chỉ ghi điểm bạn đã cải thiện thôi nhé."
   utter_diem_tb:
   - text: "Điểm tích lũy chỉ làm tròn đến 2 chữ số thập phân bạn nhé. "
+  
+  utter_dang_ky_nhap_hoc:
+  - text: "1. Khi đăng ký nhập học sinh viên phải nộp các giấy tờ theo quy định tại Quy chế tuyển sinh đại học, cao đẳng hệ chính quy hiện hành. Tất cả giấy tờ khi sinh viên nhập học phải được xếp vào túi hồ sơ của từng cá nhân và được quản lý tại Phòng Quản lý người học.
+\n2. Sau khi xem xét thấy đủ điều kiện nhập học, Phòng Quản lý người học trình Giám đốc ký quyết định công nhận người đến học là sinh viên chính thức của HVNH và cấp cho sinh viên:
+\na. Thẻ sinh viên;
+\nb. Sổ đăng ký học tập;
+\nc. Phiếu nhận cố vấn học tập hoặc địa chỉ liên hệ trong trường hợp cần tư vấn.
+\nd. Tài khoản cá nhân của sinh viên sử dụng trên cổng thông tin điện tử của HVNH.
+\n3. Mọi thủ tục đăng ký nhập học phải được hoàn thành trong thời hạn theo quy định tại Quy chế tuyển sinh đại học, cao đẳng hệ chính quy hiện hành.
+\n4. Sinh viên nhập học được HVNH cung cấp đầy đủ các thông tin về mục tiêu, nội dung và kế hoạch học tập của các chương trình, quy chế đào tạo, nghĩa vụ và quyền lợi của sinh viên. Các thông tin trên được cung cấp trên website HVNH và Sổ tay sinh viên."
+
+  utter_dk_klht:
+  - text: "1. Đầu mỗi năm học, HVNH thông báo lịch trình học dự kiến cho từng chương trình trong từng học kỳ, danh sách các học phần bắt buộc và tự chọn dự kiến sẽ dạy, đề cương chi tiết, điều kiện tiên quyết để được đăng ký học cho từng học phần, lịch kiểm tra và thi, hình thức kiểm tra và thi đối với các học phần.
+\n2. Trước khi bắt đầu mỗi học kỳ, tùy theo khả năng và điều kiện học tập của bản thân, từng sinh viên phải đăng ký học các học phần dự định sẽ học trong học kỳ đó với Phòng Đào tạo. Có 3 hình thức đăng ký các học phần sẽ học trong mỗi học kỳ: đăng ký sớm, đăng ký bình thường và đăng ký muộn.
+\na. Đăng ký bình thường là hình thức đăng ký được thực hiện trước thời điểm bắt đầu học kỳ 2 tuần đến 4 tuần;
+\nb. Đăng ký muộn là hình thức đăng ký được thực hiện trong 2 tuần đầu của học kỳ chính hoặc trong tuần đầu của học kỳ phụ cho những sinh viên muốn đăng ký học thêm hoặc đăng ký học đổi sang học phần khác khi không có lớp. Khi điều kiện cho phép, Giám đốc HVNH quyết định áp dụng hình thức đăng ký sớm, sinh viên được đăng ký trước thời điểm bắt đầu học kỳ 2 tháng.
+\n3. Khối lượng học tập tối thiểu mà mỗi sinh viên phải đăng ký trong mỗi học kỳ được quy định như sau:
+\na. 14 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên được xếp hạng học lực bình thường;
+\nb. 10 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên đang trong thời gian bị xếp hạng học lực yếu;
+\nc. HVNH không quy định khối lượng học tập tối thiểu đối với sinh viên ở học kỳ phụ.
+\n4. Sinh viên đang trong thời gian bị xếp hạng học lực yếu chỉ được đăng ký khối lượng học tập không quá 14 tín chỉ cho mỗi học kỳ. Không hạn chế khối lượng đăng ký học tập của những sinh viên xếp hạng học lực bình thường.
+\n5. Việc đăng ký các học phần sẽ học cho từng học kỳ phải bảo đảm điều kiện tiên quyết của từng học phần và trình tự học tập của mỗi chương trình cụ thể. Sinh viên đăng ký học theo tài khoản cá nhân được cấp trên cổng thông tin điện tử của HVNH. Trường hợp đặc biệt, sinh viên có thể gửi đơn đăng ký học qua Phòng Quản lý người học.
+\n6. Phòng Đào tạo xác nhận đăng ký khối lượng học tập của sinh viên ở mỗi học kỳ theo tài khoản cá nhân hoặc đơn đăng ký của sinh viên. Khối lượng đăng ký học tập của sinh viên theo từng học kỳ được lưu giữ trên phần mềm quản lý đào tạo của HVNH và tại Phòng Đào tạo (nếu cần thiết)."
+
+  utter_chuyen_truong:
+  - text: "1. Sinh viên được xét chuyển trường nếu có các điều kiện sau đây:
+\na. Trong thời gian học tập, nếu gia đình chuyển nơi cư trú hoặc sinh viên có hoàn cảnh khó khăn, cần thiết phải chuyển đến trường gần nơi cư trú của gia đình để thuận lợi trong học tập;
+\nb. Xin chuyển đến trường có cùng ngành hoặc thuộc cùng nhóm ngành với ngành đào tạo mà sinh viên đang học;
+\nc. Được sự đồng ý của Hiệu trưởng trường xin chuyển đi và trường xin chuyển đến;
+\nd. Không thuộc một trong các trường hợp không được phép chuyển trường quy định tại khoản 2 Điều này.
+\n2. Sinh viên không được phép chuyển trường trong các trường hợp sau:
+\na. Sinh viên đã tham dự kỳ thi tuyển sinh theo đề thi chung, nhưng không trúng tuyển vào trường hoặc có kết quả thi thấp hơn điểm trúng tuyển của trường xin chuyển đến;
+\nb. Sinh viên thuộc diện nằm ngoài vùng tuyển quy định của trường xin chuyển đến;
+\nc. Sinh viên năm thứ nhất và năm cuối khóa;
+\nd. Sinh viên đang trong thời gian bị kỷ luật từ cảnh cáo trở lên.
+\n3. Thủ tục chuyển trường:
+\na. Sinh viên xin chuyển trường phải làm hồ sơ xin chuyển trường theo quy định của nhà trường;
+\nb. Hiệu trưởng trường có sinh viên xin chuyển đến quyết định tiếp nhận hoặc không tiếp nhận; quyết định việc học tập tiếp tục của sinh viên, công nhận các học phần mà sinh viên chuyển đến được chuyển đổi kết quả và số học phần phải học bổ sung, trên cơ sở so sánh chương trình ở trường sinh viên xin chuyển đi và trường xin chuyển đến."
 
   utter_tot_nghiep:
   - text: "1. Đầu học kỳ cuối khoá, các sinh viên được đăng ký làm đồ án, khóa luận tốt nghiệp hoặc học thêm một số học phần chuyên môn được quy định như sau:
@@ -272,9 +318,21 @@ actions:
 - utter_diem_tich_luy
 - utter_diem_cai_thien
 - utter_diem_tb
+<<<<<<< HEAD
 - utter_tot_nghiep
 - utter_CLB
 - utter_don_vi_doi_tac
+=======
+- utter_dang_ky_nhap_hoc
+- utter_dk_klht
+- utter_chuyen_truong
+- action_custom_thong_tin
+# - utter_default
+# - utter_please_rephrase
+# - action_name
+# - action_service
+
+>>>>>>> 0c24e6e9174601274db556237e3258f30eb7879e
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

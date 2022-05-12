@@ -7,8 +7,10 @@ pipeline:
     # # If you'd like to customize it, uncomment and adjust the pipeline.
     # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
     - name: WhitespaceTokenizer
+      intent_split_symbol: "_"
     - name: RegexFeaturizer
     - name: LexicalSyntacticFeaturizer
+    - name: DIETClassifier
     - name: CountVectorsFeaturizer
       analyzer: char_wb
       min_ngram: 1
@@ -18,8 +20,8 @@ pipeline:
       constrain_similarities: true
     - name: EntitySynonymMapper
     - name: ResponseSelector
+      retrieval_intent: ask_faq
       epochs: 100
-      constrain_similarities: true
     - name: FallbackClassifier
       threshold: 0.7
     - name: RegexEntityExtractor # tìm kiếm giang vien trong look up table

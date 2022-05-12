@@ -108,7 +108,11 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.events import UserUtteranceReverted
 from rasa_sdk.executor import CollectingDispatcher
 
+<<<<<<< HEAD
 sqliteConnection = sqlite3.connect(R'C:\Users\lehoangvu24\Desktop\Rasa\Chatbot\db_GV_Mis.db')
+=======
+sqliteConnection = sqlite3.connect(R'C:\Users\LENOVO\rasa_des_ver2\RASA_FINAL\Chatbot\GV_HTTTQL.db')
+>>>>>>> 0c24e6e9174601274db556237e3258f30eb7879e
 cursor = sqliteConnection.cursor()
 # print("Kết nối thành công")
 
@@ -131,15 +135,63 @@ class ActionAskKnowledgeBaseGiangVien(Action):
         
         cursor.execute(sqlite_select_Query)
         record = cursor.fetchall()
+<<<<<<< HEAD
         result = record[-1]
         Hoten = result[0]
         Email = result[1]
         Chucvu = result[2]
         SĐT = result[3]
         dispatcher.utter_message(f"Đây là thông tin bạn cần  nhé: {Hoten}, {Email}, {Chucvu}, {SĐT}")
+=======
+        # check = False
+        # print(text_input)
+        s = "0"
+        for result in record:
+
+            Hoten = result[0]
+            Email = result[1]
+            Chucvu = result[2]
+            SĐt = s + str(result[3])
+    
+        dispatcher.utter_message(f"Đây là thông tin bạn cần về giảng viên {Hoten} nhé: \n Email: {Email} \n Chức vụ: {Chucvu} \n Số điện thoại: {SĐt}")
+>>>>>>> 0c24e6e9174601274db556237e3258f30eb7879e
         return []
 
+class ActionAskKnowledgeBaseThongtin(Action):
+    def name(self):
+        return "action_custom_thong_tin"
 
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        text = tracker.latest_message['text']
+        text_input = text
+        thong_tin_ct = next(tracker.get_latest_entity_values("thong_tin"), None)
+        thong_tin_cts = str(thong_tin_ct).title()
+     
+        if(thong_tin_ct != None):
+        
+            sqlite_select_Query = f'''SELECT * from Thongtin where Tên like "%{thong_tin_cts}%"'''
+        
+            cursor.execute(sqlite_select_Query)
+            Ketqua = cursor.fetchall()
+           
+            for result in Ketqua:
+
+                ten = result[0]
+                Diachi = result[1]
+                SĐT = str(result[2])
+           
+            dispatcher.utter_message(
+                f"Đây là thông tin của {ten} bạn nhé: \n Địa chỉ: {Diachi} \n Số điện thoại: {SĐT}")
+
+        
+        else:
+            dispatcher.utter_message(
+                f"Thông tin bạn cung cấp hiện tại mình không có câu trả lời. Rất xin lỗi, mời bạn đổi câu hỏi khác!!")
+
+
+        return []
 # class ActionDefaultFallback(Action):
 #     """Executes the fallback action and goes back to the previous state
 #     of the dialogue"""
