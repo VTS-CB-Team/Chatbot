@@ -105,10 +105,11 @@ import sqlite3
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
+from rasa_sdk.events import SlotSet, EventType
 from rasa_sdk.events import UserUtteranceReverted
 from rasa_sdk.executor import CollectingDispatcher
 
-sqliteConnection = sqlite3.connect(R'C:\Users\LENOVO\rasa_des_ver2\Chatbot\db_GV_Mis.db')
+sqliteConnection = sqlite3.connect(R'G:\NCKH\Chatbot\db_GV_Mis.db')
 cursor = sqliteConnection.cursor()
 print("Kết nối thành công")
 
@@ -151,7 +152,45 @@ class ActionAskKnowledgeBaseLoaiSanPham(Action):
         return []
 
 
-# class ActionDefaultFallback(Action):
+# def name_cap(text):
+#     tarr = text.split()
+#     for idx in range(len(tarr)):
+#         tarr[idx] = tarr[idx].capitalize()
+#     return ' '.join(tarr)
+
+# class ValidateRestaurantForm(Action):
+#     def name(self) -> Text:
+#         return "user_details_form"
+
+#     def run(
+#         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
+#     ) -> List[EventType]:
+#         required_slots = ["name", "phone"]
+
+#         for slot_name in required_slots:
+#             if tracker.slots.get(slot_name) is None:
+#                 # Vị trí vẫn chưa được lấp đầy. Yêu cầu người dùng điền vào vị trí này tiếp theo.
+#                 return [SlotSet("requested_slot",name_cap(slot_name))]
+
+#         # All slots are filled.
+#         return [SlotSet("requested_slot", None)]
+    
+    
+# class ActionSubmit(Action):
+#     def name(self) -> Text:
+#         return "action_submit"
+
+#     def run(
+#         self,
+#         dispatcher,
+#         tracker: Tracker,
+#         domain: "DomainDict",
+#     ) -> List[Dict[Text, Any]]:
+#         dispatcher.utter_message(template="utter_details_thanks",
+#                                  Name=tracker.get_slot("name"),
+#                                  Mobile_number=tracker.get_slot("phone"))
+
+# # class ActionDefaultFallback(Action):
 #     """Executes the fallback action and goes back to the previous state
 #     of the dialogue"""
 

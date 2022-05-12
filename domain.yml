@@ -1,6 +1,8 @@
 version: "2.0"
 
 intents:
+  - start
+  - stop
   - greet
   - goodbye
   - affirm
@@ -32,22 +34,48 @@ intents:
   - diem_tich_luy
   - diem_cai_thien
   - diem_tb
+  - dang_ky_thong_tin
+  - your_name:
+      use_entities:
+        - name
+  - your_phone:
+      use_entities:
+        - phone
+
+forms:
+  user_details_form:
+    required_slots:
+      name:
+        - type: from_entity
+          entity: name
+      phone: 
+      - type: from_entity
+        entity: phone
 
 entities:
   - giang vien
+  - name
+  - phone
  
-
-# slots:
-#   name:
-#     type: text
-#   surname:
-#     type: text
-  
+slots:
+  name:
+    auto_fill: true
+    type: text
+    influence_conversation: true
+  phone:
+    auto_fill: true
+    type: text
+    influence_conversation: true
     
 responses:
   utter_greet:
-  - text: "Hi! Bạn có thể cho mình biết tên của bạn được không?"
   - text: "Hi! Mình có thể giúp gì được cho bạn?"
+
+  utter_ask_name:
+  - text: "Hi! Bạn có thể cho mình biết tên của bạn được không?"
+
+  utter_ask_phone:
+  - text: "bn cho mình xin sđt nhé 📞"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -188,9 +216,15 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   - text: "Trên bảng điểm cuối năm chỉ ghi điểm bạn đã cải thiện thôi nhé."
   utter_diem_tb:
   - text: "Điểm tích lũy chỉ làm tròn đến 2 chữ số thập phân bạn nhé. "
+  # utter_greet_with_name:
+  # - text: "Chào {name} nhé. Tụi mk giúp j đc cho bn? 🥰🥰🥰"
 
+  # utter_details_thanks:
+  # - text: "Cảm ơn {Name} đã cung cấp sđt {Mobile_number} của bn cho tui mk"
   # utter_default:
   # - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
+  utter_slots_values:
+  - text: I will remember that your name is {first_name} {last_name}!
 
 actions:
 - utter_greet
@@ -221,10 +255,14 @@ actions:
 - utter_diem_tich_luy
 - utter_diem_cai_thien
 - utter_diem_tb
+- action_name
+- utter_ask_phone
+- utter_ask_name
 # - utter_default
 # - utter_please_rephrase
-# - action_name
-# - action_service
+- action_service
+- action_submit
+
 
 session_config:
   session_expiration_time: 60

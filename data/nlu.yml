@@ -1,6 +1,14 @@
 version: "2.0"
 
 nlu:
+    - intent: start
+      examples: |
+          - /start
+
+    - intent: stop
+      examples: |
+          - /stop
+
     - intent: greet
       examples: |
           - hey
@@ -439,4 +447,10 @@ nlu:
           - Điểm tb có được làm tròn lên k?
           - Làm tròn đtb nhu nao?
 
-
+    - intent: tot_nghiep
+      examples: |
+          - Thực tập cuối khóa thì thủ tục như nào ạ
+          - Làm đồ án tốt nghiệp
+          - làm khóa luận tốt nghiệp
+          - Điểm tb có được làm tròn lên k?
+          - Làm tròn đtb nhu nao?

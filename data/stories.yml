@@ -1,10 +1,16 @@
 version: "2.0"
 
 stories:
+    - story: start
+      steps:
+          - intent: start
+          - action: utter_greet
+          - intent: stop
+          - action: utter_goodbye
+
     - story: greet_name
       steps:
           - intent: greet
-          # - action: action_name
           - action: utter_greet
 
     - story: Hỏi chương trình đào tạo
@@ -95,20 +101,20 @@ stories:
 
     - story: Tinh_diem
       steps:
-      - intent: Tinh_diem
-      - action: utter_Tinh_diem
+          - intent: Tinh_diem
+          - action: utter_Tinh_diem
 
     - story: diem_tich_luy
       steps:
-      - intent: diem_tich_luy
-      - action: utter_diem_tich_luy
+          - intent: diem_tich_luy
+          - action: utter_diem_tich_luy
 
     - story: diem_cai_thien
       steps:
-      - intent: diem_cai_thien
-      - action: utter_diem_cai_thien
+          - intent: diem_cai_thien
+          - action: utter_diem_cai_thien
 
     - story: diem_tb
       steps:
-      - intent: diem_tb
-      - action: utter_diem_tb
+          - intent: diem_tb
+          - action: utter_diem_tb
