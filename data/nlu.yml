@@ -1,6 +1,14 @@
 version: "2.0"
 
 nlu:
+    - intent: start
+      examples: |
+          - /start
+
+    - intent: stop
+      examples: |
+          - /stop
+
     - intent: greet
       examples: |
           - hey
@@ -499,4 +507,29 @@ nlu:
           - Làm sao để liên lạc với [trung tâm thực hành]{"entity":"thong_tin","values":"Trung tâm thực hành"} của trường thế ạ
           - [Trung tâm thực hành]{"entity":"thong_tin","values":"Trung tâm thực hành"} của trường mình ở đâu thế ạ
 
+    - intent: tot_nghiep
+      examples: |
+          - Thực tập cuối khóa thì quy định như nào ạ
+          - Làm đồ án tốt nghiệp
+          - làm khóa luận tốt nghiệp
+          - Điều kiện để làm đồ án hoặc khóa luận tốt nghiệp
+          - Hình thức và thời gian làm đồ án, khóa luận tốt nghiệp
+          - Tỉ lệ sinh viên viết khóa luận, đồ án tốt nghiệp là bao nhiêu ạ?
+          - Làm đồ án tốt nghiệp có cần phải học thêm môn nào khác không ạ?
 
+    - intent: CLB
+      examples: |
+          - Cho e xin thông tin các câu lạc bộ của trường
+          - CLB trực thuộc Đoàn thanh niên - Hội sinh viên
+          - Trường mình có bao nhiêu câu lạc bộ ạ?
+          - E có thể tham gia các câu lạc bộ nào tại trường ạ?
+          - Trường có nhiều CLB không ạ?
+
+    - intent: don_vi_hop_tac
+      examples: |
+          - Trường mình ký kết hợp tác với các đơn vị nào v ạ
+          - các đơn vị ký thỏa thuận hợp tác với Học viện
+          - Có ngân hàng nào ký kết thỏa thuận hợp tác với trường không?
+          - ký thỏa thuận hợp tác
+          - Có bao nhiêu đơn vị đang là đối tác của trường?
+          - đối tác của học viện
