@@ -116,6 +116,7 @@ nlu:
           - Tỷ lệ kiến thức về kinh tế chiếm bao nhiêu phần trăm tổng chương trình học vậy ạ?
           - có sự thay đổi trong khung chương trình đào tạo không ạ
           - chương trình đào tạo có điều gì khác biệt không ạ
+          - khung chương trình đào tạo của khoa MIS
 
     - intent: Hoc_phi
       examples: |
@@ -128,10 +129,16 @@ nlu:
     - intent: Nghe_nghiep
       examples: |
           - Học hệ thống thông tin quản lý ra trường làm gì ạ?
+          - Học MIS ra trường làm gì ạ?
           - Công việc cho ngành này như thế nào ạ?
           - Có thể làm trong lĩnh vực nào nếu học khoa mình ra ạ?
           - ngành này có thể đảm nhiệm những công việc nào
           - làm được gì khi học khoa hệ thống ra ạ
+          - cơ hội nghề nghiệp sau khi ra trường
+          - lĩnh vực công việc 
+          - nghề nghiệp nào phù hợp với ngành 
+          - Sau ra trường làm công việc gì
+          - cơ hội nghề nghiệp
 
     - intent: Ket_thuc_cau_hoi
       examples: |
@@ -156,7 +163,7 @@ nlu:
           - Hư a phạt
           - láo nháo
 
-    - intent: Diem
+    - intent: Sai_diem
       examples: |
           - Điểm sai thì làm thế nào?
           - Điểm thành phần sai
@@ -183,7 +190,7 @@ nlu:
           - Bao giờ đóng học phí?
           - Đóng học phí
 
-    - intent: Hoc_bong
+    - intent: Cac_loai_hoc_bong
       examples: |
           - Điều kiện học bổng
           - Cách xét học bổng
@@ -263,6 +270,17 @@ nlu:
           - điều kiện đăng ký tín chỉ
           - Không đăng ký được tín Chỉ
           - Lỗi không đăng ký học phần được
+          - Đăng ký học như thế nào?
+          - Đăng ký học
+          - Đăng ký khối lượng học tập là gì?
+          - Đăng ký khối lượng học tập
+          - Đk học
+          - ĐK học phần
+          - Đăng ký học phần
+          - Đkhp
+          - Đkklht   
+          - Dang ky khoi luong hoc tap
+          - Dang ky hoc
 
     - intent: Bao_luu_ket_qua
       examples: |
@@ -437,7 +455,7 @@ nlu:
           - Điểm môn cải thiện đã có nhưng chưa cập nhật trên ctt thì có sao k ạ?
           - Sau khi cải cải thiện điểm thấp hơn thì sao ạ?
           - Diem cai thien bao gio moi duoc cap nhat a
-          - Điểm cải thiện thấp hơn ban đầu thì lấy điểm nảo ạ?
+          - Điểm cải thiện thấp hơn ban đầu thì lấy điểm nào ạ?
 
     - intent: diem_tb
       examples: |
@@ -446,6 +464,52 @@ nlu:
           - Điểm trung bình làm tròn như nào 
           - Điểm tb có được làm tròn lên k?
           - Làm tròn đtb nhu nao?
+
+    - intent: dang_ky_nhap_hoc
+      examples: |
+          - Thủ tục đăng ký nhập học như nào?
+          - Đăng ký nhập học thế nào?
+          - Đăng ký nhập học
+          - Thủ tục nhập học
+          - Đk nhập học
+          - Đknh
+          - Nhập học
+          - Nhập học cần giấy tờ gì?
+          - Để nhập học cần làm gì?
+          - Nhap hoc
+          - Dang ky nhap hoc
+
+    - intent: chuyen_truong
+      examples: |
+          - Thủ tục chuyển trường
+          - Chuyển trường
+          - Để chuyển trường cần làm gì?
+          - Điều kiện chuyển trường
+          - Xét chuyển trường
+          - Muốn chuyển trường
+          - Chuyen truong
+
+    - intent: Thong_tin_lien_lac
+      examples: |
+          - Mình muốn hỏi sđt của [phòng qlnh]{"entity":"thong_tin","values":"phòng Quản lý người học"} ạ!
+          - cho mình xin số điện thoại của [phòng quản lý người học]{"entity":"thong_tin","values":"phòng Quản lý người học"} ạ!
+          - Mình muốn hỏi thông tin của phòng [qlnh]{"entity":"thong_tin","values":"phòng Quản lý người học"}
+          - Địa chỉ [phòng Quản lý người học]{"entity":"thong_tin","values":"phòng Quản lý người học"} ở đâu ạ!
+          - Em muốn hỏi thông tin của [phòng Đào tạo]{"entity":"thong_tin","values":"phòng Đào tạo"} ạ
+          - Địa chỉ của [pđt]{"entity":"thong_tin","values":"phòng Đào tạo"} ở đâu thế ad
+          - Ad có thể cho mình xin thông tin của [phòng đào tạo]{"entity":"thong_tin","values":"phòng Đào tạo"} không ạ, mình cảm ơn!
+          - [ký túc xá]{"entity":"thong_tin","values":"Ký túc xá"} trường mình ở đâu vậy ạ
+          - Khu [Ký túc xá]{"entity":"thong_tin","values":"Ký túc xá"} của trường có số điện thoại là gì!
+          - [ktx]{"entity":"thong_tin","values":"Ký túc xá"} của trường địa chỉ ở đâu ạ 
+          - Cho mình hỏi [Ktx]{"entity":"thong_tin","values":"Ký túc xá"} của trường
+          - Dạ em muốn hỏi về [trạm y tế]{"entity":"thong_tin","values":"Trạm y tế"} của trường mình ạ. Em cảm onw!
+          - [Trạm y tế]{"entity":"thong_tin","values":"Trạm y tế"} của trường mình số điện thoại là gì vậy ạ
+          - Mình muốn xin thuốc của [trạm y tế]{"entity":"thong_tin","values":"Trạm y tế"} của trường ạ.
+          - Mình muốn hỏi số điện thoại của [thư viện]{"entity":"thong_tin","values":"Thư viện"} trường mình vì vài vấn đề cá nhân ạ. Mong ad cung cấp!
+          - [Thư viện]{"entity":"thong_tin","values":"Thư viện"} trường mình nằm ở đâu thế ad ơi
+          - Mình muốn hỏi số điện thoại của [trung tâm thực hành]{"entity":"thong_tin","values":"Trung tâm thực hành"}
+          - Làm sao để liên lạc với [trung tâm thực hành]{"entity":"thong_tin","values":"Trung tâm thực hành"} của trường thế ạ
+          - [Trung tâm thực hành]{"entity":"thong_tin","values":"Trung tâm thực hành"} của trường mình ở đâu thế ạ
 
     - intent: tot_nghiep
       examples: |

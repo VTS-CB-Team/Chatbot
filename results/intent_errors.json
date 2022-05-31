@@ -1,0 +1,18 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7693542242050171
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "Ket_thuc_cau_hoi",
+      "confidence": 0.5031716227531433
+    }
+  }
+]

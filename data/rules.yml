@@ -16,32 +16,20 @@ rules:
           - intent: Chit_chat
           - action: utter_Chit_chat
 
+    - rule: Nói chuyện linh tinh, không chủ đề
+      steps:
+          - intent: Chit_chat
+          - action: utter_Chit_chat
+
     - rule: Hỏi thông tin giảng viên
       steps:
           - intent: Giang_vien
           - action: action_custom_Giang_vien
 
-    # Kích hoạt form
-    # - rule: Activate form
-    #   steps:
-    #       - intent: greet
-    #       - action: utter_ask_name
-    #       - action: user_details_form
-    #       - active_loop: user_details_form
-
-    # Hủy kích hoạt form
-    # - rule: Submit form
-    #   condition:
-    #       # Điều kiện mà biểu mẫu đang hoạt động
-    #       - active_loop: user_details_form
-    #   steps:
-    #       # Biểu mẫu đã bị vô hiệu hóa
-    #       - action: user_details_form
-    #       - active_loop: null
-    #       - slot_was_set:
-    #             - requested_slot: null
-    #       # The actions we want to run when the form is submitted.
-    #       - action: action_submit
+    - rule: Hỏi thông tin liên lạc
+      steps:
+          - intent: Thong_tin_lien_lac
+          - action: action_custom_thong_tin
 # - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
 #   steps:
 #   - intent: nlu_fallback

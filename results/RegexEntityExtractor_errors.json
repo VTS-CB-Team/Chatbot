@@ -1,0 +1,497 @@
+[
+  {
+    "text": "cho mình xin thông tin của thầy Phan Thanh Đức ạ!",
+    "entities": [
+      {
+        "start": 32,
+        "end": 46,
+        "value": "Phan Thanh Đức",
+        "entity": "giang vien"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "giang vien",
+        "start": 32,
+        "end": 46,
+        "confidence_entity": 0.9993743300437927,
+        "value": "Phan Thanh Đức",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "giang vien",
+        "start": 32,
+        "end": 46,
+        "confidence_entity": 0.9994626641273499,
+        "value": "Phan Thanh Đức",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "giang vien",
+        "start": 27,
+        "end": 46,
+        "value": "thầy Phan Thanh Đức",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Thông tin thầy Chu Văn Huy ad có không vậy!",
+    "entities": [
+      {
+        "start": 15,
+        "end": 26,
+        "value": "Chu Văn Huy",
+        "entity": "giang vien"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "giang vien",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9992768168449402,
+        "value": "Chu Văn Huy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "giang vien",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9991347193717957,
+        "value": "Chu Văn Huy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "giang vien",
+        "start": 10,
+        "end": 26,
+        "value": "thầy Chu Văn Huy",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Mình muốn hỏi sđt của phòng qlnh ạ!",
+    "entities": [
+      {
+        "start": 22,
+        "end": 32,
+        "value": "phòng qlnh",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 22,
+        "end": 32,
+        "confidence_entity": 0.8957797884941101,
+        "value": "phòng qlnh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cho mình xin số điện thoại của phòng quản lý người học ạ!",
+    "entities": [
+      {
+        "start": 31,
+        "end": 54,
+        "value": "phòng quản lý người học",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 31,
+        "end": 54,
+        "confidence_entity": 0.9870490431785583,
+        "value": "phòng quản lý người học",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mình muốn hỏi thông tin của phòng qlnh",
+    "entities": [
+      {
+        "start": 34,
+        "end": 38,
+        "value": "qlnh",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 34,
+        "end": 38,
+        "confidence_entity": 0.7359349727630615,
+        "value": "qlnh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Địa chỉ phòng Quản lý người học ở đâu ạ!",
+    "entities": [
+      {
+        "start": 8,
+        "end": 31,
+        "value": "phòng Quản lý người học",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 8,
+        "end": 21,
+        "confidence_entity": 0.35572150349617004,
+        "value": "phòng Quản lý",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "thong_tin",
+        "start": 8,
+        "end": 31,
+        "confidence_entity": 0.9890802502632141,
+        "value": "phòng Quản lý người học",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em muốn hỏi thông tin của phòng Đào tạo ạ",
+    "entities": [
+      {
+        "start": 26,
+        "end": 39,
+        "value": "phòng Đào tạo",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 26,
+        "end": 39,
+        "confidence_entity": 0.38137444853782654,
+        "value": "phòng Đào tạo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "thong_tin",
+        "start": 26,
+        "end": 39,
+        "confidence_entity": 0.9900479316711426,
+        "value": "phòng Đào tạo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Địa chỉ của pđt ở đâu thế ad",
+    "entities": [
+      {
+        "start": 12,
+        "end": 15,
+        "value": "pđt",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.9922313690185547,
+        "value": "pđt",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ad có thể cho mình xin thông tin của phòng đào tạo không ạ, mình cảm ơn!",
+    "entities": [
+      {
+        "start": 37,
+        "end": 50,
+        "value": "phòng đào tạo",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 37,
+        "end": 50,
+        "confidence_entity": 0.9795305728912354,
+        "value": "phòng đào tạo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ký túc xá trường mình ở đâu vậy ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "ký túc xá",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9952019453048706,
+        "value": "ký túc xá",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khu Ký túc xá của trường có số điện thoại là gì!",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "Ký túc xá",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 4,
+        "end": 10,
+        "confidence_entity": 0.6114897131919861,
+        "value": "Ký túc",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "thong_tin",
+        "start": 4,
+        "end": 13,
+        "confidence_entity": 0.9827069640159607,
+        "value": "Ký túc xá",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ktx của trường địa chỉ ở đâu ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "ktx",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9970231652259827,
+        "value": "ktx",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho mình hỏi Ktx của trường",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "Ktx",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9968836903572083,
+        "value": "Ktx",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Dạ em muốn hỏi về trạm y tế của trường mình ạ. Em cảm onw!",
+    "entities": [
+      {
+        "start": 18,
+        "end": 27,
+        "value": "trạm y tế",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.9965192079544067,
+        "value": "trạm y tế",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Trạm y tế của trường mình số điện thoại là gì vậy ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Trạm y tế",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9917014241218567,
+        "value": "Trạm y tế",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mình muốn xin thuốc của trạm y tế của trường ạ.",
+    "entities": [
+      {
+        "start": 24,
+        "end": 33,
+        "value": "trạm y tế",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 24,
+        "end": 33,
+        "confidence_entity": 0.9956235289573669,
+        "value": "trạm y tế",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mình muốn hỏi số điện thoại của thư viện trường mình vì vài vấn đề cá nhân ạ. Mong ad cung cấp!",
+    "entities": [
+      {
+        "start": 32,
+        "end": 40,
+        "value": "thư viện",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 32,
+        "end": 40,
+        "confidence_entity": 0.9956991672515869,
+        "value": "thư viện",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thư viện trường mình nằm ở đâu thế ad ơi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Thư viện",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9958721995353699,
+        "value": "Thư viện",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mình muốn hỏi số điện thoại của trung tâm thực hành",
+    "entities": [
+      {
+        "start": 32,
+        "end": 51,
+        "value": "trung tâm thực hành",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 32,
+        "end": 51,
+        "confidence_entity": 0.9940150380134583,
+        "value": "trung tâm thực hành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Làm sao để liên lạc với trung tâm thực hành của trường thế ạ",
+    "entities": [
+      {
+        "start": 24,
+        "end": 43,
+        "value": "trung tâm thực hành",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 24,
+        "end": 43,
+        "confidence_entity": 0.9952190518379211,
+        "value": "trung tâm thực hành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Trung tâm thực hành của trường mình ở đâu thế ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Trung tâm thực hành",
+        "entity": "thong_tin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "thong_tin",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9961960315704346,
+        "value": "Trung tâm thực hành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

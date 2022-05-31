@@ -2,8 +2,10 @@ language: vi
 
 pipeline:
     - name: WhitespaceTokenizer
+      intent_split_symbol: "_"
     - name: RegexFeaturizer
     - name: LexicalSyntacticFeaturizer
+    - name: DIETClassifier
     - name: CountVectorsFeaturizer
     - name: CountVectorsFeaturizer
       analyzer: char_wb
@@ -14,17 +16,22 @@ pipeline:
       constrain_similarities: true
     - name: EntitySynonymMapper
     - name: ResponseSelector
+      retrieval_intent: ask_faq
       epochs: 100
-      constrain_similarities: true
     - name: FallbackClassifier
       threshold: 0.7
     - name: RegexEntityExtractor # tìm kiếm giang vien trong look up table
       use_lookup_tables: true
 
 policies:
+    - name: VietnameseTokenizer
     - name: MemoizationPolicy
+    - name: HFTransformersNLP
+      model_weights: "vinai/phobert-base"
+      model_name: "phobert"
+    - name: LanguageModelTokenizer
+    - name: LanguageModelFeaturizer
     - name: RulePolicy
-
       core_fallback_threshold: 0.4
       core_fallback_action_name: "action_default_fallback"
       enable_fallback_prediction: True

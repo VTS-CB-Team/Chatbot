@@ -17,10 +17,10 @@ intents:
   - Ket_thuc_cau_hoi
   - Loi_cam_on
   - Chit_chat
-  - Diem
+  - Sai_diem
   - Mat_mat_khau
   - Thoi_han_hoc_phi
-  - Hoc_bong
+  - Cac_loai_hoc_bong
   - Canh_cao
   - Hoan_thi
   - Huy_hoc_phan
@@ -34,38 +34,20 @@ intents:
   - diem_tich_luy
   - diem_cai_thien
   - diem_tb
-  - dang_ky_thong_tin
-  - your_name:
-      use_entities:
-        - name
-  - your_phone:
-      use_entities:
-        - phone
+  - start
+  - stop
+  - tot_nghiep
+  - CLB
+  - don_vi_hop_tac
+  - dang_ky_nhap_hoc
+  - chuyen_truong
+  - Thong_tin_lien_lac
 
-forms:
-  user_details_form:
-    required_slots:
-      name:
-        - type: from_entity
-          entity: name
-      phone: 
-      - type: from_entity
-        entity: phone
 
 entities:
   - giang vien
-  - name
-  - phone
+  - thong_tin
  
-slots:
-  name:
-    auto_fill: true
-    type: text
-    influence_conversation: true
-  phone:
-    auto_fill: true
-    type: text
-    influence_conversation: true
     
 responses:
   utter_greet:
@@ -118,7 +100,7 @@ responses:
   utter_default:
   - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
 
-  utter_Diem:
+  utter_Sai_diem:
   - text: "Trong thời gian 1 tuần kể từ khi điểm lên CTT nếu phát hiện sai sót, bạn trực tiếp liên hệ với giảng viên dạy bạn rồi lên văn phòng Khoa làm đơn để sửa điểm nhé."
 
   utter_Mat_mat_khau:
@@ -167,7 +149,7 @@ cơ sở so sánh chương trình ở trường sinh viên xin chuyển đi và 
   utter_Thoi_han_hoc_phi:
   - text: "Thời gian đóng học phí là trong 3 tuần đầu của học kì chính bạn nhé."
 
-  utter_Hoc_bong:
+  utter_Cac_loai_hoc_bong:
   - text: "Có các loại học bổng:
 1. Học bổng khuyến khích học tập từng kì, điểm từ cao xuống thấp, mỗi khóa khoảng trên 150 sv
 2. Học phần ngân hàng tuỳ theo điều kiện từng ngân hàng như điểm rèn luyện, tích lũy, hoàn cảnh....
@@ -201,13 +183,6 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   utter_Mat_the_SV:
   - text: Em mang 3 ảnh 3x4 kèm theo chứng minh thư và 20k lệ phí lên phòng QLNH 101 để làm lại thẻ nhé. 
 
-  utter_Dang_ky_hoc_phan:
-  - text: "Khối lượng học tập tối thiểu mà mỗi sinh viên phải đăng ký trong mỗi học kỳ được quy định như sau: 
-  \n14 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên được xếp hạng học lực bình thường.
-  \n10 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên trong thời gian bị xếp hạng học lực yếu.
-  \nHVNH không quy định khối lượng học tập tối thiểu đối với những sinh viên ở học kỳ phụ
-  \nSinh viên trong thời gian bị xếp hạng học lực yếu chỉ được đăng ký khối lượng học tập không quá 14 tín chỉ cho mỗi học kỳ. Không hạn chế khối lượng đăng ký học tập của những sinh viên xếp hạng học lực bình thường."
-
   utter_Tinh_diem:
   - text: "Chào bạn, cách tính điểm bài kiểm tra trên lớp thế này bạn nhé: Chuyên cần 10%. 2 bài kiểm tra trên lớp 30%. Cuối kỳ 60%. Có thể có một số môn như năng lực số sẽ có cách tính điểm là cc:10% kt1:25%, kt2:15%, thi 50% nhé. Để rõ hơn bạn xem trên cổng thông tin nha"
   utter_diem_tich_luy:
@@ -216,15 +191,101 @@ Danh sách sinh viên chính thức được nhận học bổng của các Ngâ
   - text: "Trên bảng điểm cuối năm chỉ ghi điểm bạn đã cải thiện thôi nhé."
   utter_diem_tb:
   - text: "Điểm tích lũy chỉ làm tròn đến 2 chữ số thập phân bạn nhé. "
-  # utter_greet_with_name:
-  # - text: "Chào {name} nhé. Tụi mk giúp j đc cho bn? 🥰🥰🥰"
+  
+  utter_dang_ky_nhap_hoc:
+  - text: "1. Khi đăng ký nhập học sinh viên phải nộp các giấy tờ theo quy định tại Quy chế tuyển sinh đại học, cao đẳng hệ chính quy hiện hành. Tất cả giấy tờ khi sinh viên nhập học phải được xếp vào túi hồ sơ của từng cá nhân và được quản lý tại Phòng Quản lý người học.
+\n2. Sau khi xem xét thấy đủ điều kiện nhập học, Phòng Quản lý người học trình Giám đốc ký quyết định công nhận người đến học là sinh viên chính thức của HVNH và cấp cho sinh viên:
+\na. Thẻ sinh viên;
+\nb. Sổ đăng ký học tập;
+\nc. Phiếu nhận cố vấn học tập hoặc địa chỉ liên hệ trong trường hợp cần tư vấn.
+\nd. Tài khoản cá nhân của sinh viên sử dụng trên cổng thông tin điện tử của HVNH.
+\n3. Mọi thủ tục đăng ký nhập học phải được hoàn thành trong thời hạn theo quy định tại Quy chế tuyển sinh đại học, cao đẳng hệ chính quy hiện hành.
+\n4. Sinh viên nhập học được HVNH cung cấp đầy đủ các thông tin về mục tiêu, nội dung và kế hoạch học tập của các chương trình, quy chế đào tạo, nghĩa vụ và quyền lợi của sinh viên. Các thông tin trên được cung cấp trên website HVNH và Sổ tay sinh viên."
 
-  # utter_details_thanks:
-  # - text: "Cảm ơn {Name} đã cung cấp sđt {Mobile_number} của bn cho tui mk"
-  # utter_default:
-  # - text: "Xin loi, toi khong hieu. Ban co the giai thich lai?"
-  utter_slots_values:
-  - text: I will remember that your name is {first_name} {last_name}!
+  utter_Dang_ky_hoc_phan:
+  - text: "1. Đầu mỗi năm học, HVNH thông báo lịch trình học dự kiến cho từng chương trình trong từng học kỳ, danh sách các học phần bắt buộc và tự chọn dự kiến sẽ dạy, đề cương chi tiết, điều kiện tiên quyết để được đăng ký học cho từng học phần, lịch kiểm tra và thi, hình thức kiểm tra và thi đối với các học phần.
+\n2. Trước khi bắt đầu mỗi học kỳ, tùy theo khả năng và điều kiện học tập của bản thân, từng sinh viên phải đăng ký học các học phần dự định sẽ học trong học kỳ đó với Phòng Đào tạo. Có 3 hình thức đăng ký các học phần sẽ học trong mỗi học kỳ: đăng ký sớm, đăng ký bình thường và đăng ký muộn.
+\na. Đăng ký bình thường là hình thức đăng ký được thực hiện trước thời điểm bắt đầu học kỳ 2 tuần đến 4 tuần;
+\nb. Đăng ký muộn là hình thức đăng ký được thực hiện trong 2 tuần đầu của học kỳ chính hoặc trong tuần đầu của học kỳ phụ cho những sinh viên muốn đăng ký học thêm hoặc đăng ký học đổi sang học phần khác khi không có lớp. Khi điều kiện cho phép, Giám đốc HVNH quyết định áp dụng hình thức đăng ký sớm, sinh viên được đăng ký trước thời điểm bắt đầu học kỳ 2 tháng.
+\n3. Khối lượng học tập tối thiểu mà mỗi sinh viên phải đăng ký trong mỗi học kỳ được quy định như sau:
+\na. 14 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên được xếp hạng học lực bình thường;
+\nb. 10 tín chỉ cho mỗi học kỳ, trừ học kỳ cuối khóa học, đối với những sinh viên đang trong thời gian bị xếp hạng học lực yếu;
+\nc. HVNH không quy định khối lượng học tập tối thiểu đối với sinh viên ở học kỳ phụ.
+\n4. Sinh viên đang trong thời gian bị xếp hạng học lực yếu chỉ được đăng ký khối lượng học tập không quá 14 tín chỉ cho mỗi học kỳ. Không hạn chế khối lượng đăng ký học tập của những sinh viên xếp hạng học lực bình thường.
+\n5. Việc đăng ký các học phần sẽ học cho từng học kỳ phải bảo đảm điều kiện tiên quyết của từng học phần và trình tự học tập của mỗi chương trình cụ thể. Sinh viên đăng ký học theo tài khoản cá nhân được cấp trên cổng thông tin điện tử của HVNH. Trường hợp đặc biệt, sinh viên có thể gửi đơn đăng ký học qua Phòng Quản lý người học.
+\n6. Phòng Đào tạo xác nhận đăng ký khối lượng học tập của sinh viên ở mỗi học kỳ theo tài khoản cá nhân hoặc đơn đăng ký của sinh viên. Khối lượng đăng ký học tập của sinh viên theo từng học kỳ được lưu giữ trên phần mềm quản lý đào tạo của HVNH và tại Phòng Đào tạo (nếu cần thiết)."
+
+  utter_chuyen_truong:
+  - text: "1. Sinh viên được xét chuyển trường nếu có các điều kiện sau đây:
+\na. Trong thời gian học tập, nếu gia đình chuyển nơi cư trú hoặc sinh viên có hoàn cảnh khó khăn, cần thiết phải chuyển đến trường gần nơi cư trú của gia đình để thuận lợi trong học tập;
+\nb. Xin chuyển đến trường có cùng ngành hoặc thuộc cùng nhóm ngành với ngành đào tạo mà sinh viên đang học;
+\nc. Được sự đồng ý của Hiệu trưởng trường xin chuyển đi và trường xin chuyển đến;
+\nd. Không thuộc một trong các trường hợp không được phép chuyển trường quy định tại khoản 2 Điều này.
+\n2. Sinh viên không được phép chuyển trường trong các trường hợp sau:
+\na. Sinh viên đã tham dự kỳ thi tuyển sinh theo đề thi chung, nhưng không trúng tuyển vào trường hoặc có kết quả thi thấp hơn điểm trúng tuyển của trường xin chuyển đến;
+\nb. Sinh viên thuộc diện nằm ngoài vùng tuyển quy định của trường xin chuyển đến;
+\nc. Sinh viên năm thứ nhất và năm cuối khóa;
+\nd. Sinh viên đang trong thời gian bị kỷ luật từ cảnh cáo trở lên.
+\n3. Thủ tục chuyển trường:
+\na. Sinh viên xin chuyển trường phải làm hồ sơ xin chuyển trường theo quy định của nhà trường;
+\nb. Hiệu trưởng trường có sinh viên xin chuyển đến quyết định tiếp nhận hoặc không tiếp nhận; quyết định việc học tập tiếp tục của sinh viên, công nhận các học phần mà sinh viên chuyển đến được chuyển đổi kết quả và số học phần phải học bổ sung, trên cơ sở so sánh chương trình ở trường sinh viên xin chuyển đi và trường xin chuyển đến."
+
+  utter_tot_nghiep:
+  - text: "1. Đầu học kỳ cuối khoá, các sinh viên được đăng ký làm đồ án, khóa luận tốt nghiệp hoặc học thêm một số học phần chuyên môn được quy định như sau:
+a. Làm đồ án, khóa luận tốt nghiệp: áp dụng cho sinh viên đạt mức quy định của HVNH. Đồ án, khóa luận tốt nghiệp là học phần có khối lượng không quá 14 tín chỉ cho trình độ đại học và 5 tín chỉ cho trình độ cao đẳng. Giám đốc HVNH quy định khối lượng cụ thể phù hợp với yêu cầu đào tạo trong chương trình đào tạo.
+b. Học và thi một số học phần chuyên môn: sinh viên không được giao làm đồ án, khóa luận tốt nghiệp phải đăng ký học thêm các học phần chuyên môn và hoàn thành báo cáo thực tập được quy định trong chương trình đào tạo.
+\n2. Giám đốc HVNH quy định:
+a. Các điều kiện để sinh viên được đăng ký làm đồ án hoặc khóa luận tốt nghiệp:
+- Tích lũy đủ số học phần quy định cho chương trình đào tạo của mỗi chuyên ngành cho đến thời điểm xét;
+- Điểm trung bình chung tích luỹ toàn khoá đạt từ 3.0 trở lên;
+- Điểm khuyến khích từ thành tích nghiên cứu khoa học của sinh viên theo quy định của Giám đốc HVNH;
+- Tỉ lệ sinh viên viết khoá luận, đồ án nghiệp tối đa 10% so với tổng số sinh viên của từng ngành đào tạo.
+b. Hình thức và thời gian làm đồ án, khóa luận tốt nghiệp quy định trong chương trình đào tạo và thực hiện theo kế hoạch đào tạo hàng năm do Phòng Đào tạo công bố;
+c. Hình thức chấm đồ án, khóa luận tốt nghiệp được quy định tại Điều 25;
+d. Các khoa bố trí giảng viên phù hợp để hướng dẫn đối với sinh viên trong thời
+gian làm đồ án, khóa luận tốt nghiệp.
+\n3. Đối với một số ngành đào tạo đòi hỏi phải dành nhiều thời gian cho thí nghiệm hoặc khảo sát để sinh viên hoàn thành đồ án, khóa luận tốt nghiệp được Giám đốc HVNH phê duyệt trong chương trình đào tạo, Phòng Đào tạo có thể bố trí thời gian làm đồ án, khóa luận tốt nghiệp kết hợp với thời gian thực tập chuyên môn cuối khoá."
+
+  utter_CLB:
+  - text: "(1) Đội Công tác viên Hội sinh viên (Blue wings)
+\n(2) Đội Sinh viên tình nguyện (BAVT)
+\n(3) Câu lạc bộ Nhà Ngân hàng tương lai (TBC)
+\n(4) Câu lạc bộ Guitar (GBA)
+\n(5) Câu lạc bộ Chứng khoán (SEC)
+\n(6) Câu lạc bộ Kỹ năng kinh doanh (BSC)
+\n(7) Đội Sinh viên tình nguyện vận động hiến máu (BBC)
+\n(8) Câu lạc bộ Tin học Ngân hàng (BIT)
+\n(9) Câu lạc bộ CEO trẻ (YCC)
+\n(10) Câu lạc bộ Nghiên cứu khoa học (SRC)
+\n(11) Câu lạc bộ Đầu tư (BIC)
+\n(12) Câu lạc bộ Tiếng Anh (EC)
+\n(13) Câu lạc bộ Người dẫn chương trình (MCC)
+\n(14) Câu lạc bộ Nguồn nhân lực ngân hàng (UBC)
+\n(15) Câu lạc bộ Kế toán – Kiểm toán (AAC)
+\n(16) Câu lạc bộ Marketing Plus (MPC)
+\n(17) Đội Văn nghệ (BAAT)
+\n(18)Câu Lạc bộ Taekwondo – TAEKWONDO
+\n(19) Câu lạc bộ karatedo HVNH – BKC
+\n(20) Câu lạc bộ bóng đá HVNH – BAFT
+\n(21) Câu lạc bộ Dự án sinh viên - Enactus
+\n(22) Câu lạc bộ Sinh viên Ngân hàng Forum – SVNHFORUM
+\n(23) Câu lạc bộ Kỹ năng giao tiếp và thuyết trình – SCBA
+\n(24) Câu lạc bộ Tài chính – FC
+\n(25) Câu lạc bộ Sinh viên tài năng – GSC
+\n(26) Câu lạc bộ Kinh doanh quốc tế - IBC"
+
+  utter_don_vi_hop_tac:
+  - text: "1. Ngân hàng TMCP Đầu tư và Phát triển Việt Nam - BIDV
+\n2. Ngân hàng Nông nghiệp và phát triển nông thôn Việt Nam – Agribank
+\n3. Ngân hàng TMCP Ngoại thương Việt Nam – Vietcombank
+\n4. Ngân hàng TMCP Công thương Việt Nam – Vietinbank
+\n5. Ngân hàng TMCP Quân đội – MB Bank
+\n6. Ngân hàng TMCP Kỹ Thương Việt Nam – Techcombank
+\n7. Hội các Nhà quản trị Doanh nghiệp Việt Nam
+\n8. Hiệp hội Kế toán công chứng Anh Quốc – ACCA
+\n9. Ngân hàng TMCP Sài Gòn – Hà Nội
+\n10. Ngân hàng TMCP Việt Nam Thịnh Vượng – VPbank"
+
 
 actions:
 - utter_greet
@@ -242,7 +303,7 @@ actions:
 - utter_Diem
 - utter_Mat_mat_khau
 - utter_Thoi_han_hoc_phi
-- utter_Hoc_bong
+- utter_Cac_loai_hoc_bong
 - utter_Canh_cao
 - utter_Hoan_thi
 - utter_Huy_hoc_phan
@@ -255,14 +316,12 @@ actions:
 - utter_diem_tich_luy
 - utter_diem_cai_thien
 - utter_diem_tb
-- action_name
-- utter_ask_phone
-- utter_ask_name
-# - utter_default
-# - utter_please_rephrase
-- action_service
-- action_submit
-
+- utter_tot_nghiep
+- utter_CLB
+- utter_don_vi_hop_tac
+- utter_dang_ky_nhap_hoc
+- utter_chuyen_truong
+- action_custom_thong_tin
 
 session_config:
   session_expiration_time: 60
