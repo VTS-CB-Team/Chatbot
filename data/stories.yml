@@ -1,10 +1,16 @@
 version: "2.0"
 
 stories:
+    - story: start
+      steps:
+          - intent: start
+          - action: utter_greet
+          - intent: stop
+          - action: utter_goodbye
+
     - story: greet_name
       steps:
           - intent: greet
-          # - action: action_name
           - action: utter_greet
 
     - story: Hỏi chương trình đào tạo
@@ -92,3 +98,199 @@ stories:
       steps:
           - intent: Dang_ky_hoc_phan
           - action: utter_Dang_ky_hoc_phan
+
+    - story: Tinh_diem
+      steps:
+          - intent: Tinh_diem
+          - action: utter_Tinh_diem
+
+    - story: diem_tich_luy
+      steps:
+          - intent: diem_tich_luy
+          - action: utter_diem_tich_luy
+
+    - story: diem_cai_thien
+      steps:
+          - intent: diem_cai_thien
+          - action: utter_diem_cai_thien
+
+    - story: tot_nghiep
+      steps:
+          - intent: tot_nghiep
+          - action: utter_tot_nghiep
+
+    - story: CLB
+      steps:
+          - intent: CLB
+          - action: utter_CLB
+
+    - story: don_vi_hop_tac
+      steps:
+          - intent: don_vi_hop_tac
+          - action: utter_don_vi_hop_tac
+
+    - story: diem_tb
+      steps:
+          - intent: diem_tb
+          - action: utter_diem_tb
+
+    - story: dang_ky_nhap_hoc
+      steps:
+          - intent: dang_ky_nhap_hoc
+          - action: utter_dang_ky_nhap_hoc
+
+    - story: chuyen_truong
+      steps:
+          - intent: chuyen_truong
+          - action: utter_chuyen_truong
+
+    # điều kiện tiên quyết chưa có
+    - story: luong_dang_ky_hoc_phan
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Dang_ky_hoc_phan
+          - action: utter_Dang_ky_hoc_phan
+          - intent: Huy_hoc_phan
+          - action: utter_Huy_hoc_phan
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    # chưa có luồng này
+    # - story: luong_giay_to
+    #   steps:
+    #       - intent: greet
+    #       - action: utter_greet
+    #       - intent:
+    #       - action:
+    #       - intent: Loi_cam_on
+    #       - action: utter_Loi_cam_on
+    #       - action: utter_goodbye
+
+    # cách nộp học phí chưa có
+    - story: luong_hoc_phi
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Hoc_phi
+          - action: utter_Hoc_phi
+          - intent: Thoi_han_hoc_phi
+          - action: utter_Thoi_han_hoc_phi
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    # kênh hỗ trợ sinh viên chưa có
+    - story: luong_ho_tro_sinh_vien
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: CLB
+          - action: utter_CLB
+          - intent: Giang_vien
+          - action: utter_Giang_vien
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    - story: luong_the_sinh_vien
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Mat_the_SV
+          - action: utter_Mat_the_SV
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    - story: luong_thu_tuc
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Bao_luu_ket_qua
+          - action: utter_Bao_luu_ket_qua
+          - intent: Rut_hoc_ba
+          - action: utter_Rut_hoc_ba
+          - intent: Hoan_thi
+          - action: utter_Hoan_thi
+          - intent: Phuc_khao
+          - action: utter_Phuc_khao
+          - intent: chuyen_truong
+          - action: utter_chuyen_truong
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    - story: luong_tot_nghiep
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: tot_nghiep
+          - action: utter_tot_nghiep
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    - story: luong_tu_van_tuyen_sinh
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Tuyen_sinh
+          - action: utter_Tuyen_sinh
+          - intent: Nghe_nghiep
+          - action: utter_Nghe_nghiep
+          - intent: Chuong_trinh_dao_tao
+          - action: utter_Chuong_trinh_dao_tao
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    # cách xét và điều kiện kiên quyết chưa có
+    - story: luong_hoc_bong
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Hoc_bong
+          - action: utter_Hoc_bong
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    # sai thông tin, hk phí lỗi chưa có
+    - story: luong_cong_thong_tin
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Sai_diem
+          - action: utter_Sai_diem
+          - intent: Mat_mat_khau
+          - action: utter_Mat_mat_khau
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    # intent, vs utter diem_cai_thien hơi có vấn đề chắc phải chỉnh
+    - story: luong_diem
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: Tinh_diem
+          - action: utter_Tinh_diem
+          - intent: diem_tich_luy
+          - action: utter_diem_tich_luy
+          - intent: diem_cai_thien
+          - action: utter_diem_cai_thien
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
+
+    - story: luong_dang_ky_nhap_hoc
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: dang_ky_nhap_hoc
+          - action: utter_dang_ky_nhap_hoc
+          - intent: Loi_cam_on
+          - action: utter_Loi_cam_on
+          - action: utter_goodbye
